@@ -710,7 +710,8 @@ body {
         margin: 0 2px;
         width: 13px; }
         .slider-add__best-price-wrapper .rating > .star > .icon {
-          width: 13px; }
+          width: 13px;
+          height: 13px; }
     .slider-add__best-price-wrapper .btn > .c-btn, .slider-add__best-price-wrapper .btn > .c-btn-param {
       padding: 0 45px;
       margin: 20px 0 0; }
