@@ -897,6 +897,9 @@ body {
             width: 9px;
             height: 9px;
             margin: 0 1px; }
+            .calculator__graph .table > .column.is-best-price .best-price > .rating > .star > .icon {
+              width: 9px;
+              height: 9px; }
 
 .calculator-orange-form {
   position: relative;
