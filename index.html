@@ -10,7 +10,7 @@
 <body class="main-wrapper">
     <!-- HEADER -->
     <section class="header container">
-        <nav class="main-navigation">
+        <nav class="main-navigation ">
             <div class="main-navigation__logo"></div>
             <div class="main-navigation__page-title">Блокноты</div>
             <div class="main-navigation__list">
@@ -22,9 +22,17 @@
             </div>
 
             <div class="main-navigation__send-request">
-                <a href="#modal" class="c-btn is-orange-border">
+                <a href="#call-popup" class="c-btn is-orange-border">
                     Отправить запрос
                 </a>
+            </div>
+
+            <div class="main-navigation__mobile">
+                <div class="icon-wrapper nav-mobile-btn">
+                <svg class="icon">
+                    <use xlink:href="#menu"/>
+                </svg>
+                </div>
             </div>
 
             <div class="main-navigation__user-profile">
@@ -46,6 +54,53 @@
                 </ul>
             </div>
         </nav>
+
+        <div class="mobile-navigation">
+            <div class="mobile-navigation__head">
+                <div class="main-navigation__logo"></div>
+                <div class="main-navigation__mobile">
+                    <div class="icon-wrapper nav-mobile-btn">
+                    <svg class="icon">
+                        <use xlink:href="#menu"/>
+                    </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-navigation__content">
+                <div class="main-navigation__list is-mobile">
+                    <ul class="nav-list is-mobile">
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Калькулятор</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                    </ul>
+                </div>
+
+                <div class="main-navigation__send-request is-mobile">
+                    <a href="#call-popup" class="c-btn is-orange-border">
+                        Отправить запрос
+                    </a>
+                </div>
+                <div class="main-navigation__user-profile is-mobile">
+                <ul class="header-profile is-mobile">
+                    <li>
+                        <a href="#" class="c-icon is-user">
+                            <svg title="Профиль" class="icon">
+                                <use xlink:href="#user"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="c-icon is-basket is-non-empty">
+                            <svg title="Профиль" class="icon">
+                                <use xlink:href="#icon-cart"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+
         <nav class="type-navigation">
             <ul class="type-navigation__list">
                 <li>
@@ -65,7 +120,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="type-navigation__item is-active is-pen">
+                    <a href="#" class="type-navigation__item is-pen">
                         <svg title="С ручкой" class="icon">
                             <use xlink:href="#icon-pen"/>
                         </svg>
@@ -92,7 +147,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="type-navigation__item  is-active is-rip">
+                    <a href="#" class="type-navigation__item  is-rip">
                         <svg title="Отрывные на клею" class="icon">
                             <use xlink:href="#icon-rip"/>
                         </svg>
@@ -116,6 +171,12 @@
                         <div class="label">Предложение недели</div>
 
                         <h3 class="title">Блокнот на пружине А5 SHORT</h3>
+
+                        <div class="slider-add__btn btn">
+                            <a href="#request-popup" class="c-btn is-orange">
+                                Заказать
+                            </a>
+                        </div>
                     
                         <div class="slider-add__description">
                             <ul class="slider-add__list">
@@ -172,7 +233,7 @@
                                 </div>
                             </div>
                             <div class="btn">
-                                <a href="#" class="c-btn is-orange">
+                                <a href="#request-popup" class="c-btn is-orange">
                                     Заказать
                                 </a>
                             </div>
@@ -579,7 +640,7 @@
                                 <div class="text">
                                     Загрузить свой макет для обложки, задней обложки и блока Вы сможете при оформлении заказа.
                                 
-                                    <a href="#">Требования к макетам</a>
+                                    <a href="#demand-popup">Требования к макетам</a>
                                 </div>
                             </div>
                         </div>
@@ -625,14 +686,14 @@
                             Предварительно менеджер типографии свяжется с Вами для согласования удобного дня и времени доставки.
                         </li>
                         <li>
-                            Доставка в другие регионы осуществляется через партнеров – транспортные компании. Доставка тиража в транспортную компанию – партнер осуществляется <b>бесплатно</b>.
-                            
-                            <br><br>
+                            Доставка в другие регионы осуществляется через партнеров – транспортные компании. 
+                            Доставка тиража в транспортную компанию – партнер осуществляется <b>бесплатно</b>.
+                            <br/><br/>
 Нашими партнерами являются: <b>
     «Деловые линии», «Байкал-сервис», «ПЭК», 
     «Желдорэкспедиция» и «Главдоставка».</b>
  
-                            <br><br>
+                            <br/><br/>
 <b>Срок доставки в регионы составляет 3-7 дней</b>, в зависимости от выбранной Вами транспортной компании.
                         </li>
 
@@ -640,7 +701,7 @@
                             Для организации доставки тиража в выбранную Вами транспортную компанию Вам нужно сообщить менеджеру:
  
                             <br><br>
-                            <ul>
+                            <ul class="c-list-circle">
                                 <li>название транспортной компании;</li>
                                 <li>адрес доставки.</li>
                             </ul>
@@ -723,7 +784,6 @@
     <!-- FOOTER -->
     <section class="footer">
         <div class="map">
-            <div id="map"></div> 
             <div class="map__wrapper">
                 <h2 class="title-with-line">Контакты</h2>
 
@@ -754,6 +814,7 @@
                 </div>
 
             </div>
+            <div id="map"></div> 
         </div>
 
         <div class="footer__panel">
@@ -777,13 +838,26 @@
     </section>
     <!-- FOOTER  -->
 
-    <div class="remodal c-popup" data-remodal-id="modal">
+    <div class="remodal c-popup is-thanks" data-remodal-id="thanks-popup">
+        <button data-remodal-action="close" 
+        class="remodal-close"></button>
+
+        <div class="c-popup__wrapper">
+            <h2 class="title-with-line">Спасибо</h2>
+
+            <span class="c-link is-orange">Ваш заказ №123456 оформлен</span>
+
+            <p>Информация отправлена на Вашу электронную почту. При необходимости с Вами свяжется менеджер.</p>
+
+        </div>
+    </div>
+    <div class="remodal c-popup" data-remodal-id="call-popup">
         <button data-remodal-action="close" 
         class="remodal-close"></button>
 
         <h2 class="title-with-line">Задать вопрос</h2>
 
-        <div class="title">Ваши контактные данные</div>
+        <div class="c-popup__title">Ваши контактные данные</div>
 
         <div class="garant">
             <svg title="Профиль" class="icon">
@@ -804,12 +878,22 @@
                     Ваш номер телефона
                 </label>
                 <input type="text" class="form-control is-success">
+                <div class="icon">
+                    <svg>
+                        <use xlink:href="#input-tick" />
+                    </svg>
+                </div>
             </div>
             <div class="form-group">
                 <label for="" class="form-label">
                     Ваш email
                 </label>
                 <input type="email" class="form-control is-error">
+                <div class="icon">
+                    <svg>
+                        <use xlink:href="#input-attention" />
+                    </svg>
+                </div>
             </div>
             <div class="form-group">
                 <label for="" class="form-label">
@@ -817,104 +901,484 @@
                 </label>
                 <textarea class="form-control is-textarea"></textarea>
             </div>
+            <div class="form-group has-accept-terms">
+                <div class="c-checkbox">
+                    <input type="checkbox" />
+                    <label for="">Я соглашаюсь с <a class="c-link is-orange" href="#" >условиями обработки персональных данных</a></label>
+                </div>
+            </div>
             <div class="form-group">
-                <button class="c-btn is-orange">Отправить</button>
+                <button class="c-btn is-orange main-btn">Отправить</button>
             </div>
         </form>
         
     </div>
+    
+    <div class="remodal c-popup is-request" data-remodal-id="request-popup">
+        <button data-remodal-action="close" 
+        class="remodal-close"></button>
+
+        <form action="">
+            <div class="c-popup__wrapper">
+                <div class="c-popup__column">
+                    <h2 class="title-with-line">
+                        Оформление заказа
+                    </h2>
+
+                    <div class="c-popup__title">Ваши контактные данные</div>
+
+                    <div class="garant">
+                        <svg title="Профиль" class="icon">
+                            <use xlink:href="#icon-lock"/>
+                        </svg>
+                        Гарантируем безопасность ваших данных
+                    </div>
+                        <div class="form-group">
+                            <label for="" class="form-label">
+                                Ваше имя
+                            </label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="form-label">
+                                Ваш номер телефона
+                            </label>
+                            <input type="text" class="form-control is-success">
+                            <div class="icon">
+                                <svg>
+                                    <use xlink:href="#input-tick" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="form-label">
+                                Ваш email
+                            </label>
+                            <input type="email" class="form-control is-error">
+                            <div class="icon">
+                                <svg>
+                                    <use xlink:href="#input-attention" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="form-label">
+                                Текст сообщения
+                            </label>
+                            <textarea class="form-control is-textarea"></textarea>
+                        </div>
+                        <div class="form-group has-accept-terms">
+                            <div class="c-checkbox">
+                                <input type="checkbox" />
+                                <label for="">Я соглашаюсь с <a class="c-link is-orange" href="#" >условиями обработки персональных данных</a></label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button class="c-btn is-orange main-btn">Отправить</button>
+                        </div>
+                </div>
+
+                <div class="c-popup__column is-right">
+                    <div class="c-popup__title">
+                        Загрузка макетов
+                    </div>
+
+                    <div class="form-group has-accept-terms">
+                        <div class="download-link">
+                            <span>макет_обложки.pdf</span>
+                            <img src="images/trash.png" alt="" class="icon">
+                        </div>
+                    </div>
+
+                    <div class="form-group has-accept-terms inline">
+                        <a href="#" class="c-link is-orange has-icon-download">
+                            <span>макет_обложки.pdf</span>
+                        </a>
+                        <svg class="icon">
+                            <use xlink:href="#icon-upload" />
+                        </svg>
+                    </div>
+
+                    <div class="form-group has-accept-terms inline">
+                        <a href="#" class="c-link is-orange has-icon-download">
+                            <span>макет_обложки.pdf</span>
+                        </a>
+                        <svg class="icon">
+                            <use xlink:href="#icon-upload" />
+                        </svg>
+                    </div>
+
+                    <div class="form-group has-accept-terms inline">
+                        <div class="c-expand is-active">
+                            <div class="c-expand__head">
+                                <div class="title has-icon attention">Технические требованиям к макетам</div>
+                                <svg class="icon">
+                                    <use xlink:href="#expand" />
+                                </svg>
+                            </div>
+
+                            <div class="c-expand__content">
+                                
+                                <div class="characteristics__groups">
+                                    <ul class="characteristics__column">
+                                        <li class="characteristics__item is-title">ОБЩАЯЯ ИНФОРМАЦИЯ</li>
+                                        <li class="characteristics__item">
+                                            <span class="name">Формат:</span>
+                                            <span class=""> А5 (14,5 х 21)</span>
+                                        </li>
+                                        <li class="characteristics__item">
+                                            <span class="name">Скрепление:</span>
+                                            <span class=""> Wire-O</span>
+                                        </li>
+                                        <li class="characteristics__item">
+                                            <span class="name">По стороне:</span>
+                                            <span class=""> Узкой (14,5)</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="characteristics__column">
+                                        <li class="characteristics__item is-title">ОБЩАЯЯ ИНФОРМАЦИЯ</li>
+                                        <li class="characteristics__item">
+                                            <span class="name">Формат:</span>
+                                            <span class=""> А5 (14,5 х 21)</span>
+                                        </li>
+                                        <li class="characteristics__item">
+                                            <span class="name">Скрепление:</span>
+                                            <span class=""> Wire-O</span>
+                                        </li>
+                                        <li class="characteristics__item">
+                                            <span class="name">По стороне:</span>
+                                            <span class=""> Узкой (14,5)</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="characteristics__column">
+                                        <li class="characteristics__item is-title">ОБЩАЯЯ ИНФОРМАЦИЯ</li>
+                                        <li class="characteristics__item">
+                                            <span class="name">Формат:</span>
+                                            <span class=""> А5 (14,5 х 21)</span>
+                                        </li>
+                                        <li class="characteristics__item">
+                                            <span class="name">Скрепление:</span>
+                                            <span class=""> Wire-O</span>
+                                        </li>
+                                        <li class="characteristics__item">
+                                            <span class="name">По стороне:</span>
+                                            <span class=""> Узкой (14,5)</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="characteristics__column">
+                                        <li class="characteristics__item is-title">ОБЩАЯЯ ИНФОРМАЦИЯ</li>
+                                        <li class="characteristics__item">
+                                            <span class="name">Формат:</span>
+                                            <span class=""> А5 (14,5 х 21)</span>
+                                        </li>
+                                        <li class="characteristics__item">
+                                            <span class="name">Скрепление:</span>
+                                            <span class=""> Wire-O</span>
+                                        </li>
+                                        <li class="characteristics__item">
+                                            <span class="name">По стороне:</span>
+                                            <span class=""> Узкой (14,5)</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="characteristics__column">
+                                        <li class="characteristics__item is-title">ОБЩАЯЯ ИНФОРМАЦИЯ</li>
+                                        <li class="characteristics__item">
+                                            <span class="name">Формат:</span>
+                                            <span class=""> А5 (14,5 х 21)</span>
+                                        </li>
+                                        <li class="characteristics__item">
+                                            <span class="name">Скрепление:</span>
+                                            <span class=""> Wire-O</span>
+                                        </li>
+                                        <li class="characteristics__item">
+                                            <span class="name">По стороне:</span>
+                                            <span class=""> Узкой (14,5)</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group has-accept-terms inline">
+                        <div class="c-expand">
+                            <div class="c-expand__head">
+                                <div class="title has-icon settings">Характеристики заказа</div>
+                                <svg class="icon">
+                                    <use xlink:href="#expand" />
+                                </svg>
+                            </div>
+
+                            <div class="c-expand__content">
+                                
+                                <div class="characteristics__groups">
+                                    <ul class="characteristics__column">
+                                        <li class="characteristics__item is-title">ОБЩАЯЯ ИНФОРМАЦИЯ</li>
+                                        <li class="characteristics__item">
+                                            <span class="name">Формат:</span>
+                                            <span class=""> А5 (14,5 х 21)</span>
+                                        </li>
+                                        <li class="characteristics__item">
+                                            <span class="name">Скрепление:</span>
+                                            <span class=""> Wire-O</span>
+                                        </li>
+                                        <li class="characteristics__item">
+                                            <span class="name">По стороне:</span>
+                                            <span class=""> Узкой (14,5)</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="characteristics__column">
+                                        <li class="characteristics__item is-title">ОБЩАЯЯ ИНФОРМАЦИЯ</li>
+                                        <li class="characteristics__item">
+                                            <span class="name">Формат:</span>
+                                            <span class=""> А5 (14,5 х 21)</span>
+                                        </li>
+                                        <li class="characteristics__item">
+                                            <span class="name">Скрепление:</span>
+                                            <span class=""> Wire-O</span>
+                                        </li>
+                                        <li class="characteristics__item">
+                                            <span class="name">По стороне:</span>
+                                            <span class=""> Узкой (14,5)</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="characteristics__column">
+                                        <li class="characteristics__item is-title">ОБЩАЯЯ ИНФОРМАЦИЯ</li>
+                                        <li class="characteristics__item">
+                                            <span class="name">Формат:</span>
+                                            <span class=""> А5 (14,5 х 21)</span>
+                                        </li>
+                                        <li class="characteristics__item">
+                                            <span class="name">Скрепление:</span>
+                                            <span class=""> Wire-O</span>
+                                        </li>
+                                        <li class="characteristics__item">
+                                            <span class="name">По стороне:</span>
+                                            <span class=""> Узкой (14,5)</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="characteristics__column">
+                                        <li class="characteristics__item is-title">ОБЩАЯЯ ИНФОРМАЦИЯ</li>
+                                        <li class="characteristics__item">
+                                            <span class="name">Формат:</span>
+                                            <span class=""> А5 (14,5 х 21)</span>
+                                        </li>
+                                        <li class="characteristics__item">
+                                            <span class="name">Скрепление:</span>
+                                            <span class=""> Wire-O</span>
+                                        </li>
+                                        <li class="characteristics__item">
+                                            <span class="name">По стороне:</span>
+                                            <span class=""> Узкой (14,5)</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="characteristics__column">
+                                        <li class="characteristics__item is-title">ОБЩАЯЯ ИНФОРМАЦИЯ</li>
+                                        <li class="characteristics__item">
+                                            <span class="name">Формат:</span>
+                                            <span class=""> А5 (14,5 х 21)</span>
+                                        </li>
+                                        <li class="characteristics__item">
+                                            <span class="name">Скрепление:</span>
+                                            <span class=""> Wire-O</span>
+                                        </li>
+                                        <li class="characteristics__item">
+                                            <span class="name">По стороне:</span>
+                                            <span class=""> Узкой (14,5)</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="remodal c-popup is-thanks is-demand" data-remodal-id="demand-popup">
+        <button data-remodal-action="close" 
+        class="remodal-close"></button>
+
+        <div class="c-popup__wrapper">
+            <h2 class="title-with-line">Требования к макетам</h2>
+
+            <p class="text">
+                <b>Верстка многостраничных</b> (больше 8-ми полос) 
+                <b>изданий</b> должна быть выполнена в программах 
+                верстки QuarkXPress, 
+                Adobe InDesign или Adobe PageMaker.
+            </p>
+            <p class="text">
+                Верстка малостраничных изданий или изделий под 
+                высечку может быть выполнена и в программах 
+                Adobe Illustrator и CorelDraw.  В работу также 
+                принимаются композитные PS-файлы и композитные 
+                PDF-файлы версии 1.3, изготовленные с помощью 
+                Acrobat Distiller версии выше 6.0 или из Adobe 
+                Illustrator и Adobe InDesign.
+            </p>
+            <p class="text">
+                В случае листовой продукции размер страницы в 
+                публикации должен быть равен обрезному формату 
+                будущей продукции. В случае изделий под высечку 
+                в предоставленном файле  а отдельном слое должен 
+                присутствовать штамп высечки. Все элементы, 
+                которые идут навылет, должны выступать за края 
+                страницы публикации или за края штампа на 3-5 мм.
+                 Также не допускается располагать значимые 
+                 элементы публикации, например текст, ближе чем 
+                 на 5 мм от обрезного формата.
+            </p>
+            <p class="text">
+                Все, что не должно быть отпечатано на оттиске 
+                (контур вырубки, фольга, выборочный лак и т. п.) 
+                необходимо разместить на отдельном слое или 
+                обозначить дополнительной смесевой краской 
+                (Spot Color).
+            </p>
+            <p class="text">
+                К предоставляемой публикации должны прилагаться файлы всех используемых в ней иллюстраций и всех начертаний используемых в ней шрифтов (не забывайте о возможности присутствия в EPS-файлах шрифтов, не включенных  в них). Не допускается помещение элементов в верстку через ClipBoard, а также средствами OLE. Не допускается использование при верстке продукции системных шрифтов (Arial, Times New Roman и т.д.).
+            </p>
+            <p class="text">
+                Разрешение растровых изображений, помещенных в публикацию, должно быть не менее 250 dpi с учетом масштабирования. Толщина используемых в публикации линий не должна быть меньше 0.1 pt также с учетом масштабирования.
+            </p>
+            <p class="text">
+                <b>Верстка многостраничных</b> (больше 8-ми полос) 
+                <b>изданий</b> должна быть выполнена в программах 
+                верстки QuarkXPress, 
+                Adobe InDesign или Adobe PageMaker.
+            </p>
+            <p class="text">
+                
+            <p class="text">
+                <h3>В случаях:</h3>
+
+                <ul class="c-list-circle">
+                    <li>
+                        использования в публикации в 
+                        QuarkXpress примененых к 
+                        тексту All Caps и Small Caps 
+                        в тексте на русском языке;
+                    </li>
+                    <li>
+                        использования в публикации в 
+                        QuarkXpress примененых к 
+                        тексту All Caps и Small Caps 
+                        в тексте на русском языке;
+                    </li>
+                </ul>
+            </p>
+
+            </p>
+            <p class="text">
+                <span class="red">В случае несоблюдения данных требований 
+                    работа запускается в печать только после 
+                    подписания заказчиком спусковых проб.
+                    </span>
+                     <b>Вы 
+                    всегда можете присутствовать при печати 
+                    Вашего тиража.</b>
+            </p>
+
+        </div>
+    </div>
 
     <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
-        <symbol id="attention-circle" viewBox="0 0 64 64">
-        <title>attention-circle</title> <path fill="#ffa53b" d="M32 17.446c-0.003 0-0.006 0-0.009 0-1.349 0-2.444 1.093-2.446 2.441v14.080c-0.001 0.023-0.001 0.049-0.001 0.076 0 1.356 1.099 2.456 2.456 2.456s2.456-1.099 2.456-2.456c0-0.027-0-0.054-0.001-0.080l0 0.004v-14.080c-0.003-1.349-1.097-2.442-2.446-2.442-0.002 0-0.005 0-0.008 0h0zM32 39.609c-1.357 0.007-2.454 1.108-2.456 2.465v1.47c-0.001 0.023-0.001 0.049-0.001 0.076 0 1.356 1.099 2.456 2.456 2.456s2.456-1.099 2.456-2.456c0-0.027-0-0.054-0.001-0.080l0 0.004v-1.47c0 0 0 0 0 0 0-1.357-1.097-2.458-2.453-2.465h-0.001z"/> <path fill="none" stroke="#ffa53b" stroke-width="4.7407" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M61.63 32c0 16.364-13.266 29.63-29.63 29.63s-29.63-13.266-29.63-29.63c0-16.364 13.266-29.63 29.63-29.63s29.63 13.266 29.63 29.63z"/> 
-        </symbol>
-        <symbol id="check-tick" viewBox="0 0 91 64">
-        <title>check-tick</title> <path fill="#fff" d="M0 27.794l7.131-7.314 35.566 36.297-7.131 7.223z"/> <path fill="#fff" d="M91.429 7.223l-7.131-7.223-55.68 56.777 7.131 7.223z"/> 
-        </symbol>
-        <symbol id="cross" viewBox="0 0 64 64">
-        <title>cross</title> <path fill="#ffa53b" d="M9.138 1.505l53.217 53.217c0.971 0.974 1.571 2.319 1.571 3.803 0 2.976-2.412 5.388-5.388 5.388-1.491 0-2.841-0.606-3.816-1.585l-53.217-53.217c-0.971-0.974-1.571-2.319-1.571-3.803 0-2.976 2.412-5.388 5.388-5.388 1.491 0 2.841 0.606 3.816 1.585l0 0z"/> <path fill="#ffa53b" d="M54.722 1.505l-53.217 53.217c-0.971 0.974-1.571 2.319-1.571 3.803 0 2.976 2.412 5.388 5.388 5.388 1.491 0 2.841-0.606 3.816-1.585l53.217-53.217c0.971-0.974 1.571-2.319 1.571-3.803 0-2.976-2.412-5.388-5.388-5.388-1.491 0-2.841 0.606-3.816 1.585l-0 0z"/> 
-        </symbol>
-        <symbol id="expand" viewBox="0 0 97 64">
-        <title>expand</title> <path fill="#ffa53b" d="M93.374 19.511l-37.307 41.059c-1.845 2.077-4.523 3.378-7.504 3.378s-5.659-1.302-7.495-3.368l-0.009-0.010c-1.899-2.185-3.056-5.058-3.056-8.201s1.157-6.016 3.069-8.216l-0.013 0.015 37.414-41.059c1.801-2.121 4.47-3.458 7.451-3.458s5.65 1.337 7.439 3.444l0.012 0.014c1.945 2.166 3.134 5.045 3.134 8.201s-1.189 6.035-3.144 8.212l0.010-0.011z"/> <path fill="#ffa53b" d="M3.109 19.511l37.307 41.059c1.845 2.077 4.523 3.378 7.504 3.378s5.659-1.302 7.495-3.368l0.009-0.010c1.899-2.185 3.056-5.058 3.056-8.201s-1.157-6.016-3.069-8.216l0.013 0.015-37.414-41.059c-1.801-2.121-4.47-3.458-7.451-3.458s-5.65 1.337-7.439 3.444l-0.012 0.014c-1.945 2.166-3.134 5.045-3.134 8.201s1.189 6.035 3.144 8.212l-0.010-0.011z"/> 
-        </symbol>
-        <symbol id="icon-ava" viewBox="0 0 47 64">
-        <title>Icon-ava</title> <path style="fill:none!important" stroke-width="2.6122" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M5.224 2.612h35.265c2.885 0 5.224 2.339 5.224 5.225v0 48.327c0 2.885-2.339 5.224-5.224 5.224v0h-35.265c-2.164 0-3.918-1.754-3.918-3.918v0-50.939c0-2.164 1.754-3.918 3.918-3.918v0z"/> <path style="stroke:none!important" d="M35.265 0c0.721 0 1.306 0.585 1.306 1.306v61.388c0 0.721-0.585 1.306-1.306 1.306s-1.306-0.585-1.306-1.306v-61.388c0-0.721 0.585-1.306 1.306-1.306z"/> 
-        </symbol>
-        <symbol id="icon-calculator" viewBox="0 0 50 64">
-        <title>Icon-Calculator</title> <path fill="none" stroke="#ffa53b" stroke-width="2.1573" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M3.955 1.079h41.708c1.589 0 2.876 1.288 2.876 2.876v56.090c0 1.589-1.288 2.876-2.876 2.876h-41.708c-1.589 0-2.876-1.288-2.876-2.876v-56.090c0-1.589 1.288-2.876 2.876-2.876z"/> <path fill="none" stroke="#ffa53b" stroke-width="2.1573" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M8.72 8.809h32.18v15.461h-32.18v-15.461z"/> <path fill="#ffa53b" d="M11.776 32.091h3.864v2.561h-3.864v-2.561z"/> <path fill="#ffa53b" d="M22.831 32.091h3.955v2.561h-3.955v-2.561z"/> <path fill="#ffa53b" d="M33.977 32.091h3.866v2.561h-3.866v-2.561z"/> <path fill="#ffa53b" d="M11.776 41.573h3.864v2.563h-3.864v-2.563z"/> <path fill="#ffa53b" d="M22.831 41.573h3.955v2.563h-3.955v-2.563z"/> <path fill="#ffa53b" d="M33.977 41.573h3.866v2.563h-3.866v-2.563z"/> <path fill="#ffa53b" d="M11.776 51.101h3.864v2.517h-3.864v-2.517z"/> <path fill="#ffa53b" d="M22.831 51.101h3.955v2.517h-3.955v-2.517z"/> <path fill="#ffa53b" d="M33.977 51.101h3.866v2.517h-3.866v-2.517z"/> 
-        </symbol>
-        <symbol id="icon-cards" viewBox="0 0 82 64">
-        <title>Icon-cards</title> <path fill="#ffa53b" d="M10.24 46.080v-2.56h-5.12c-1.414 0-2.56-1.146-2.56-2.56v-35.84c0-1.414 1.146-2.56 2.56-2.56h58.88c1.414 0 2.56 1.146 2.56 2.56v10.24h2.56v-10.24c0-2.828-2.292-5.12-5.12-5.12h-58.88c-2.828 0-5.12 2.292-5.12 5.12v35.84c0 2.828 2.292 5.12 5.12 5.12h5.12zM76.8 64h-58.88c-2.828 0-5.12-2.292-5.12-5.12v0-35.84c0-2.828 2.292-5.12 5.12-5.12v0h58.88c2.828 0 5.12 2.292 5.12 5.12v0 35.84c0 2.828-2.292 5.12-5.12 5.12v0zM17.92 20.48c-1.414 0-2.56 1.146-2.56 2.56v0 35.84c0 1.414 1.146 2.56 2.56 2.56v0h58.88c1.414 0 2.56-1.146 2.56-2.56v0-35.84c0-1.414-1.146-2.56-2.56-2.56v0h-58.88zM40.96 51.2h-0.002c0.012 0 0.024 0 0.036 0 2.852 0 5.43-1.176 7.277-3.072l-1.828-1.792-0.001 0.001c-1.394 1.421-3.336 2.303-5.483 2.303-4.242 0-7.68-3.438-7.68-7.68s3.438-7.68 7.68-7.68c2.148 0 4.090 0.882 5.485 2.304l1.828-1.792-0.002-0.002c-1.858-1.895-4.447-3.070-7.311-3.070-5.655 0-10.24 4.585-10.24 10.24s4.585 10.24 10.24 10.24c0.001 0 0.001 0 0.001 0zM53.76 51.2c-5.655 0-10.24-4.585-10.24-10.24s4.585-10.24 10.24-10.24c5.655 0 10.24 4.585 10.24 10.24v0c-0.007 5.652-4.588 10.233-10.239 10.24h-0.001zM53.76 33.28c-4.242 0-7.68 3.438-7.68 7.68s3.438 7.68 7.68 7.68c4.242 0 7.68-3.438 7.68-7.68v0c-0.004-4.24-3.44-7.676-7.68-7.68h-0zM66.56 7.68h-64v-2.56h64v2.56zM10.24 20.48h-7.68v-2.56h7.68v2.56zM10.24 30.72h-5.12v-2.56h5.12v2.56zM25.6 42.24h-2.56v-2.56h2.56v2.56zM71.68 42.24h-2.56v-2.56h2.56v2.56zM61.44 12.8h-12.8v-2.56h12.8v2.56zM46.080 12.8h-5.12v-2.56h5.12v2.56z"/> 
-        </symbol>
-        <symbol id="icon-cart" viewBox="0 0 72 64">
-        <title>icon-cart</title> <path fill="#ffa53b" d="M14.871 6.735h-0.151c0.188 0.161 0.34 0.358 0.447 0.58l0.005 0.011zM62.569 46.012c-4.559 0.018-8.312 3.445-8.843 7.863l-0.004 0.043h-20.254c-0.375-2.89-2.063-5.321-4.437-6.704l-0.043-0.023 1.92-4.518h33.845c2.598-0.429 4.555-2.658 4.555-5.345 0-0.016-0-0.032-0-0.048v0.002-26.052c1.147-0.118 2.033-1.079 2.033-2.248s-0.887-2.129-2.024-2.247l-0.010-0.001h-54.438l0.301 0.591c-0.112-0.233-0.264-0.43-0.449-0.589l-0.002-0.002h0.151l-2.108-4.314c-0.759-1.505-2.293-2.52-4.064-2.52-0.334 0-0.66 0.036-0.973 0.105l0.030-0.005h-5.534c-1.13 0.135-1.998 1.088-1.998 2.244s0.868 2.109 1.988 2.243l0.011 0.001h5.647c0.301 0 0.678 0 0.941 0l2.296 4.71 0.038 0.105c0.026 0.040 0.051 0.075 0.077 0.108l-0.002-0.002c-0.001 0.004-0.001 0.009-0.001 0.014 0 0.036 0.015 0.068 0.038 0.091v0l0.264 0.655 12.311 28.857c0.553 1.205 1.419 2.186 2.495 2.864l0.027 0.016-1.732 4.096h-0.038c-0.014-0-0.030-0-0.046-0-4.967 0-8.994 4.027-8.994 8.994s4.027 8.994 8.994 8.994c3.743 0 6.952-2.286 8.306-5.538l0.022-0.059h21.421c1.378 3.287 4.569 5.553 8.29 5.553 4.951 0 8.964-4.013 8.964-8.964s-4.013-8.964-8.964-8.964c-0.002 0-0.005 0-0.008 0h0zM16.828 11.23h48v26.041c-0.095 0.354-0.25 0.664-0.456 0.932l0.005-0.006h-35.501c-0.407-0.205-0.731-0.523-0.936-0.914l-0.006-0.012zM24.584 59.501c-0.005 0-0.010 0-0.015 0-2.483 0-4.495-2.013-4.495-4.495s2.012-4.495 4.495-4.495c2.483 0 4.495 2.013 4.495 4.495v0c0 0.005 0 0.010 0 0.015 0 2.475-2.005 4.482-4.48 4.484h-0zM62.569 59.501c-0.005 0-0.010 0-0.015 0-2.483 0-4.495-2.013-4.495-4.495s2.013-4.495 4.495-4.495c2.483 0 4.495 2.013 4.495 4.495v0c0 0.007 0 0.015 0 0.023 0 2.472-2.004 4.476-4.476 4.476-0.001 0-0.003 0-0.004 0h0zM11.219 9.431c-0.024-0.030-0.049-0.065-0.072-0.101l-0.003-0.005 0.113 0.215c-0.026-0.024-0.042-0.057-0.042-0.095 0-0.012 0.002-0.023 0.005-0.034l-0 0.001zM11.257 9.536c0.052 0.248 0.143 0.467 0.268 0.663l-0.005-0.008zM14.871 6.746h-0.151c0.188 0.161 0.34 0.358 0.447 0.58l0.005 0.011zM58.127 13.485c-1.248 0-2.259 1.011-2.259 2.259v17.969c0 1.248 1.011 2.259 2.259 2.259v0c1.227-0.002 2.221-0.997 2.221-2.225 0-0.012-0-0.024-0-0.036v0.002-17.991c0-0.006 0-0.012 0-0.019 0-1.227-0.994-2.223-2.221-2.225h-0zM49.167 13.485c-1.227 0.002-2.221 0.997-2.221 2.225 0 0.012 0 0.024 0 0.036v-0.002 17.969c-0 0.010-0 0.022-0 0.034 0 1.228 0.994 2.223 2.221 2.225h0c1.248 0 2.259-1.011 2.259-2.259v0-17.991c-0.009-1.241-1.017-2.244-2.259-2.244 0 0-0 0-0 0v0zM40.245 13.485c-1.248 0-2.259 1.011-2.259 2.259v17.969c0 1.248 1.011 2.259 2.259 2.259v0c1.227-0.002 2.221-0.997 2.221-2.225 0-0.012-0-0.024-0-0.036v0.002-17.991c0-0.006 0-0.012 0-0.019 0-1.227-0.994-2.223-2.221-2.225h-0zM31.285 13.485c-1.227 0.002-2.221 0.997-2.221 2.225 0 0.012 0 0.024 0 0.036v-0.002 17.969c-0 0.010-0 0.022-0 0.034 0 1.228 0.994 2.223 2.221 2.225h0c1.247 0 2.259-1.011 2.259-2.259v0-17.991c-0.009-1.241-1.017-2.244-2.259-2.244 0 0-0 0-0 0v0z"/> 
-        </symbol>
-        <symbol id="icon-cashbox" viewBox="0 0 68 64">
-        <title>Icon-cashbox</title> <path fill="#ffa53b" d="M67.114 64h-66.027c-0.589 0-1.067-0.478-1.067-1.067v0-9.6h2.133v8.533h63.9v-8.533h2.133v9.6c0 0 0 0 0 0 0 0.589-0.478 1.067-1.067 1.067-0.002 0-0.004 0-0.007 0h0zM68.106 49.749l-7.381-19.008v-16.875c0-0.589-0.478-1.067-1.067-1.067v0h-7.456v-2.133h5.323c0.589 0 1.067-0.478 1.067-1.067v0-8.533c0-0.589-0.478-1.067-1.067-1.067v0h-19.168c-0.589 0-1.067 0.478-1.067 1.067v0 8.533c0 0.589 0.478 1.067 1.067 1.067v0h5.323v2.133h-10.645v2.133h25.557v14.933h-48.992v-14.933h2.133v7.467c0 0.589 0.478 1.067 1.067 1.067v0h17.035c0.589 0 1.067-0.478 1.067-1.067v0-17.067c0-0.003 0-0.007 0-0.011 0-0.292-0.118-0.556-0.309-0.747l-2.133-2.133c-0.193-0.192-0.459-0.31-0.752-0.31s-0.559 0.119-0.752 0.31l0-0-1.376 1.387-1.376-1.387c-0.193-0.192-0.459-0.31-0.752-0.31s-0.559 0.119-0.752 0.31l0-0-1.376 1.387-1.376-1.387c-0.196-0.19-0.463-0.307-0.757-0.309h-0c-0.294 0.004-0.56 0.121-0.758 0.31l0-0-1.376 1.387-1.376-1.387c-0.196-0.183-0.461-0.296-0.752-0.296s-0.556 0.113-0.753 0.297l0.001-0.001-2.133 2.133c-0.19 0.196-0.307 0.463-0.309 0.757v7.467h-3.189c-0.589 0-1.067 0.478-1.067 1.067v0 16.875l-7.381 19.008c-0.045 0.114-0.071 0.246-0.071 0.384 0 0.588 0.476 1.065 1.063 1.067h66.027c0.587-0.007 1.061-0.485 1.061-1.073 0-0.136-0.025-0.266-0.071-0.385l0.002 0.007zM39.423 8.533v-6.4h17.045v6.4h-17.045zM50.079 12.8h-4.267v-2.133h4.267v2.133zM13.866 5.771l1.067-1.067 1.376 1.387c0.193 0.192 0.459 0.31 0.752 0.31s0.559-0.119 0.752-0.31l-0 0 1.376-1.387 1.376 1.387c0.196 0.19 0.463 0.307 0.757 0.309h0c0.291-0.002 0.555-0.12 0.747-0.309l-0 0 1.376-1.387 1.387 1.387c0.193 0.192 0.459 0.31 0.752 0.31s0.559-0.119 0.752-0.31l-0 0 1.376-1.387 1.067 1.067v15.563h-14.912v-15.563zM2.644 49.067l6.624-17.067h49.664l6.624 17.067h-62.912zM55.398 27.733h-21.298c-0.589 0-1.067-0.478-1.067-1.067v0-8.533c0-0.589 0.478-1.067 1.067-1.067v0h21.299c0.589 0 1.067 0.478 1.067 1.067v0 8.533c0 0.589-0.478 1.067-1.067 1.067-0 0-0.001 0-0.001 0h0zM35.167 25.6h19.17v-6.4h-19.17v6.4zM26.647 14.933h-10.651v-2.133h10.651v2.133zM26.647 19.2h-10.651v-2.133h10.651v2.133zM47.947 37.333h-2.133v-2.133h2.133v2.133zM45.813 41.6h-2.133v-2.133h2.133v2.133zM50.074 41.6h-2.133v-2.133h2.133v2.133zM47.94 45.867h-2.133v-2.133h2.133v2.133zM52.201 45.867h-2.133v-2.133h2.133v2.133zM43.681 37.333h-2.133v-2.133h2.133v2.133zM54.331 41.6h-2.133v-2.133h2.133v2.133zM56.464 45.867h-2.133v-2.133h2.133v2.133zM52.204 37.333h-2.133v-2.133h2.133v2.133zM41.554 41.6h-2.133v-2.133h2.133v2.133zM43.687 45.867h-2.133v-2.133h2.133v2.133zM39.427 37.333h-2.133v-2.133h2.133v2.133zM37.294 41.6h-2.133v-2.133h2.133v2.133zM35.161 37.333h-2.133v-2.133h2.133v2.133zM33.027 41.6h-2.133v-2.133h2.133v2.133zM30.894 37.333h-2.133v-2.133h2.133v2.133zM28.761 41.6h-2.133v-2.133h2.133v2.133zM26.627 37.333h-2.133v-2.133h2.133v2.133zM24.494 41.6h-2.133v-2.133h2.133v2.133zM26.627 45.867h-2.133v-2.133h2.133v2.133zM22.367 37.333h-2.133v-2.133h2.133v2.133zM22.367 45.867h-2.133v-2.133h2.133v2.133zM20.234 41.6h-2.133v-2.133h2.133v2.133zM18.1 45.867h-2.133v-2.133h2.133v2.133zM18.1 37.333h-2.133v-2.133h2.133v2.133zM15.967 41.6h-2.133v-2.133h2.133v2.133zM13.834 45.867h-2.133v-2.133h2.133v2.133zM39.394 45.867h-2.133v-2.133h2.133v2.133zM35.167 45.867h-2.133v-2.133h2.133v2.133zM30.9 45.867h-2.133v-2.133h2.133v2.133zM30.9 27.733h-19.167v-2.133h19.167v2.133zM18.121 10.667h-2.133v-2.133h2.133v2.133zM22.381 10.667h-2.133v-2.133h2.133v2.133zM26.641 10.667h-2.133v-2.133h2.133v2.133zM39.421 23.467h-2.133v-2.133h2.133v2.133zM43.681 23.467h-2.133v-2.133h2.133v2.133zM47.94 23.467h-2.133v-2.133h2.133v2.133zM52.201 23.467h-2.133v-2.133h2.133v2.133zM54.334 6.4h-12.78v-2.133h12.78v2.133zM34.1 58.667c-1.178 0-2.133-0.955-2.133-2.133s0.955-2.133 2.133-2.133c1.178 0 2.133 0.955 2.133 2.133v0c0 1.178-0.955 2.133-2.133 2.133v0zM27.71 57.6h-21.301v-2.133h21.3v2.133zM61.79 57.6h-21.301v-2.133h21.3v2.133z"/> 
-        </symbol>
-        <symbol id="icon-clip" viewBox="0 0 57 64">
-        <title>Icon-clip</title> <path style="fill:none!important" stroke-width="2.7234" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M5.447 1.362h46.298c2.256 0 4.085 1.829 4.085 4.085v53.106c0 2.256-1.829 4.085-4.085 4.085h-46.298c-2.256 0-4.085-1.829-4.085-4.085v-53.106c0-2.256 1.829-4.085 4.085-4.085z"/> <path style="stroke:none!important" d="M19.064 8.17h19.064v2.723h-19.064v-2.723z"/> <path style="stroke:none!important" d="M14.979 25.872v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 31.319v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 36.766v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 42.213v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 47.66v-1.362h14.979v1.362h-14.979z"/> 
-        </symbol>
-        <symbol id="icon-glue" viewBox="0 0 57 64">
-        <title>Icon-glue</title> <path style="fill:none!important" stroke-width="2.7234" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M5.447 1.362h46.298c2.256 0 4.085 1.829 4.085 4.085v53.106c0 2.256-1.829 4.085-4.085 4.085h-46.298c-2.256 0-4.085-1.829-4.085-4.085v-53.106c0-2.256 1.829-4.085 4.085-4.085z"/> <path style="stroke:none!important" d="M2.723 2.723h53.106v6.808h-53.106v-6.809z"/> <path style="stroke:none!important" d="M14.979 23.149v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 28.596v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 34.043v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 39.489v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 44.936v-1.362h14.979v1.362h-14.979z"/> 
-        </symbol>
-        <symbol id="icon-heart" viewBox="0 0 70 64">
-        <title>Icon-heart</title> <path fill="#ff4200" d="M64.175 5.935c-3.436-3.622-8.284-5.876-13.659-5.876-5.389 0-10.248 2.266-13.678 5.896l-0.008 0.009-1.891 1.978-1.949-2.007c-3.43-3.657-8.292-5.935-13.686-5.935-5.38 0-10.231 2.266-13.65 5.896l-0.009 0.009c-3.495 3.705-5.644 8.714-5.644 14.225 0 5.526 2.16 10.547 5.682 14.265l-0.009-0.010 27.811 29.004c0.35 0.374 0.846 0.608 1.396 0.611h0.001c0.56-0.002 1.065-0.236 1.425-0.61l0.001-0.001 27.84-28.916c3.513-3.719 5.673-8.75 5.673-14.285 0-5.52-2.148-10.538-5.654-14.264l0.010 0.011z"/> 
-        </symbol>
-        <symbol id="icon-lock" viewBox="0 0 52 64">
-        <title>icon-lock</title> <path fill="#afb0b3" d="M38.091 23.154h-0.807v-6.922c-0.159-8.999-7.492-16.234-16.514-16.234-0.085 0-0.17 0.001-0.254 0.002l0.013-0c-0.151-0.005-0.329-0.008-0.508-0.008-8.702 0-15.808 6.832-16.247 15.425l-0.002 0.039c0 0.155 0 7.552 0 7.707h3.070c0-0.179 0-7.277 0-7.455 0.521-7.142 6.444-12.74 13.674-12.74 7.419 0 13.461 5.893 13.701 13.254l0.001 0.022v6.922h-31.251c-0.013-0-0.029-0-0.044-0-1.592 0-2.887 1.273-2.922 2.857l-0 0.003v18.5c0.086 4.773 3.976 8.608 8.761 8.608 0.044 0 0.088-0 0.131-0.001l-0.007 0h23.284c0.037 0.001 0.081 0.001 0.125 0.001 4.786 0 8.675-3.835 8.763-8.6l0-0.008v-18.5c-0.028-1.592-1.326-2.872-2.922-2.872-0.015 0-0.031 0-0.046 0h0.002zM37.989 44.525c-0.055 3.124-2.601 5.635-5.733 5.635-0.031 0-0.062-0-0.092-0.001l0.005 0h-23.272c-0.026 0-0.057 0.001-0.088 0.001-3.131 0-5.676-2.511-5.73-5.63l-0-0.005v-18.401h34.91v18.401zM20.533 43.921c2.988-0.102 5.371-2.548 5.371-5.552 0-3.068-2.487-5.555-5.555-5.555-3.067 0-5.553 2.485-5.555 5.551v0c0.057 3.080 2.567 5.555 5.655 5.555 0.027 0 0.055-0 0.082-0.001l-0.004 0zM20.533 35.765c1.403 0.036 2.526 1.182 2.526 2.591 0 1.431-1.16 2.591-2.591 2.591-1.429 0-2.588-1.157-2.591-2.585v-0c0.020-1.438 1.191-2.596 2.632-2.596 0.007 0 0.014 0 0.021 0h-0.001z"/> <path fill="#2ebc67" stroke="#fff" stroke-width="2.4151" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M50.717 49.509c0 7.336-5.947 13.283-13.283 13.283s-13.283-5.947-13.283-13.283c0-7.336 5.947-13.283 13.283-13.283s13.283 5.947 13.283 13.283z"/> <path fill="#fff" d="M33.811 49.889l1.671-1.657 3.297 3.239-1.671 1.657z"/> <path fill="#fff" d="M42.846 47.546l-1.674-1.659-5.661 5.579 1.681 1.666z"/> 
-        </symbol>
-        <symbol id="icon-pdf" viewBox="0 0 50 64">
-        <title>Icon-pdf</title> <path fill="#fff" d="M49.495 19.017c-0.441-1.237-1.083-2.301-1.896-3.209l0.008 0.009-12.251-12.983c-0.83-0.843-1.822-1.522-2.926-1.989l-0.059-0.022c-1.011-0.486-2.194-0.786-3.443-0.823l-0.013-0h-25.143c-0.023-0.001-0.050-0.001-0.077-0.001-1.026 0-1.948 0.44-2.59 1.141l-0.002 0.003c-0.682 0.715-1.103 1.687-1.103 2.756 0 0.028 0 0.055 0.001 0.083l-0-0.004v56.046c-0.001 0.023-0.001 0.050-0.001 0.077 0 1.055 0.421 2.012 1.103 2.712l-0.001-0.001c0.627 0.73 1.552 1.19 2.584 1.19 0.030 0 0.060-0 0.090-0.001l-0.004 0h42.734c0.025 0.001 0.054 0.001 0.084 0.001 1.032 0 1.958-0.459 2.582-1.185l0.004-0.004c0.679-0.701 1.098-1.658 1.098-2.712 0-0.027-0-0.054-0.001-0.080l0 0.004v-37.349c-0.028-1.326-0.311-2.579-0.802-3.722l0.025 0.065zM30.171 5.669c0.623 0.199 1.161 0.512 1.613 0.918l-0.004-0.004 12.293 13.029c0.395 0.487 0.693 1.069 0.857 1.706l0.007 0.031h-14.766v-15.68zM45.257 58.651h-40.229v-53.303h20.114v17.326c-0 0.023-0.001 0.050-0.001 0.078 0 1.069 0.418 2.040 1.1 2.758l-0.002-0.002c0.646 0.704 1.57 1.144 2.597 1.144 0.027 0 0.054-0 0.081-0.001l-0.004 0h16.343v32z"/> 
-        </symbol>
-        <symbol id="icon-pen-active" viewBox="0 0 60 64">
-        <title>Icon-pen</title> <path style="fill:none!important" stroke-width="2.7234" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M5.447 2.723h46.298c2.256 0 4.085 1.829 4.085 4.085v51.745c0 2.256-1.829 4.085-4.085 4.085h-46.298c-2.256 0-4.085-1.829-4.085-4.085v-51.745c0-2.256 1.829-4.085 4.085-4.085z"/> <path style="stroke:none!important" d="M2.723 12.255h53.106v2.723h-53.106v-2.723z"/> <path style="stroke:none!important" d="M6.809 0h2.723v6.809h-2.723v-6.809z"/> <path style="stroke:none!important" d="M12.255 0h2.723v6.809h-2.723v-6.809z"/> <path style="stroke:none!important" d="M17.702 0h2.723v6.809h-2.723v-6.809z"/> <path style="stroke:none!important" d="M36.766 0h2.723v6.809h-2.723v-6.809z"/> <path style="stroke:none!important" d="M42.213 0h2.723v6.809h-2.723v-6.809z"/> <path style="stroke:none!important" d="M47.66 0h2.723v6.809h-2.723v-6.809z"/> <path style="stroke:none!important" d="M14.979 27.234v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 32.681v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 38.128v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 43.574v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 49.021v-1.362h14.979v1.362h-14.979z"/> <path fill="#ffa53b" style="stroke:none!important" d="M44.936 0h14.979v64h-14.979v-64z"/> <path style="stroke:none!important" d="M55.83 41.332h-2.723v-2.587h2.723v2.587zM54.468 43.919v0zM55.83 49.085h-2.723v-2.587h2.723v2.587zM58.553 3.877h-1.362v-2.587c-0.023-0.718-0.61-1.291-1.331-1.291-0.011 0-0.022 0-0.032 0h-2.722c-0.009-0-0.020-0-0.031-0-0.721 0-1.309 0.573-1.331 1.289l-0 0.002v2.587h-1.362c-0.009-0-0.020-0-0.031-0-0.722 0-1.309 0.574-1.331 1.291l-0 0.002v48.443c0.001 0.213 0.057 0.413 0.153 0.588l-0.003-0.006 4.085 7.751c0.242 0.427 0.694 0.71 1.212 0.71s0.969-0.283 1.208-0.704l0.004-0.007 4.085-7.751c0.093-0.168 0.148-0.368 0.15-0.581v-48.45c-0.022-0.718-0.609-1.293-1.331-1.293-0.011 0-0.021 0-0.032 0h0.002zM51.745 6.464h1.362v20.669h2.723v-20.68h1.362v27.128h-5.447v-27.128zM51.745 36.176h5.447v15.502h-5.447v-15.513zM54.468 58.473l-2.22-4.212h4.439z"/> 
-        </symbol>
-        <symbol id="icon-pen" viewBox="0 0 60 64">
-        <title>Icon-pen</title> <path style="fill:none!important" stroke-width="2.7234" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M5.447 2.723h46.298c2.256 0 4.085 1.829 4.085 4.085v51.745c0 2.256-1.829 4.085-4.085 4.085h-46.298c-2.256 0-4.085-1.829-4.085-4.085v-51.745c0-2.256 1.829-4.085 4.085-4.085z"/> <path style="stroke:none!important" d="M2.723 12.255h53.106v2.723h-53.106v-2.723z"/> <path style="stroke:none!important" d="M6.809 0h2.723v6.809h-2.723v-6.809z"/> <path style="stroke:none!important" d="M12.255 0h2.723v6.809h-2.723v-6.809z"/> <path style="stroke:none!important" d="M17.702 0h2.723v6.809h-2.723v-6.809z"/> <path style="stroke:none!important" d="M36.766 0h2.723v6.809h-2.723v-6.809z"/> <path style="stroke:none!important" d="M42.213 0h2.723v6.809h-2.723v-6.809z"/> <path style="stroke:none!important" d="M47.66 0h2.723v6.809h-2.723v-6.809z"/> <path style="stroke:none!important" d="M14.979 27.234v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 32.681v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 38.128v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 43.574v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 49.021v-1.362h14.979v1.362h-14.979z"/> <path fill="#fff" style="stroke:none!important" d="M44.936 0h14.979v64h-14.979v-64z"/> <path style="stroke:none!important" d="M55.83 41.332h-2.723v-2.587h2.723v2.587zM54.468 43.919v0zM55.83 49.085h-2.723v-2.587h2.723v2.587zM58.553 3.877h-1.362v-2.587c-0.023-0.718-0.61-1.291-1.331-1.291-0.011 0-0.022 0-0.032 0h-2.722c-0.009-0-0.020-0-0.031-0-0.721 0-1.309 0.573-1.331 1.289l-0 0.002v2.587h-1.362c-0.009-0-0.020-0-0.031-0-0.722 0-1.309 0.574-1.331 1.291l-0 0.002v48.443c0.001 0.213 0.057 0.413 0.153 0.588l-0.003-0.006 4.085 7.751c0.242 0.427 0.694 0.71 1.212 0.71s0.969-0.283 1.208-0.704l0.004-0.007 4.085-7.751c0.093-0.168 0.148-0.368 0.15-0.581v-48.45c-0.022-0.718-0.609-1.293-1.331-1.293-0.011 0-0.021 0-0.032 0h0.002zM51.745 6.464h1.362v20.669h2.723v-20.68h1.362v27.128h-5.447v-27.128zM51.745 36.176h5.447v15.502h-5.447v-15.513zM54.468 58.473l-2.22-4.212h4.439z"/> 
-        </symbol>
-        <symbol id="icon-pin" viewBox="0 0 45 64">
-        <title>Icon-pin</title> <path fill="#ffa53b" d="M38.486 6.575c-4.087-4.063-9.721-6.574-15.941-6.574s-11.854 2.511-15.942 6.575l0.001-0.001c-7.881 7.825-8.86 22.56-2.122 31.491l18.064 25.935 18.036-25.905c6.764-8.96 5.785-23.695-2.096-31.52zM22.753 30.385c-4.499-0.026-8.135-3.679-8.135-8.182 0-4.519 3.663-8.182 8.182-8.182s8.182 3.663 8.182 8.182c0 0.003 0 0.005 0 0.008v-0c-0.021 4.519-3.689 8.175-8.211 8.175-0.006 0-0.012 0-0.018 0h0.001z"/> 
-        </symbol>
-        <symbol id="icon-print" viewBox="0 0 64 64">
-        <title>Icon-print</title> <path fill="#fff" d="M2.258 54.309h12.613v7.451c0 0 0 0 0 0 0 1.237 1.003 2.24 2.24 2.24 0.006 0 0.013 0 0.019-0h29.741c0.005 0 0.012 0 0.018 0 1.237 0 2.24-1.003 2.24-2.24 0 0 0-0 0-0v0-7.451h12.613c0.005 0 0.012 0 0.018 0 1.237 0 2.24-1.003 2.24-2.24 0 0 0-0 0-0v0-40.137c0 0 0-0 0-0 0-1.237-1.003-2.24-2.24-2.24-0.006 0-0.013 0-0.019 0h-12.612v-7.451c0 0 0-0 0-0 0-1.237-1.003-2.24-2.24-2.24-0.006 0-0.013 0-0.019 0h-29.741c-0.005-0-0.012-0-0.018-0-1.237 0-2.24 1.003-2.24 2.24 0 0 0 0 0 0v0 7.451h-12.613c-0.005-0-0.012-0-0.018-0-1.237 0-2.24 1.003-2.24 2.24 0 0 0 0 0 0v0 40.137c0.025 1.233 1.024 2.225 2.257 2.24h0.001zM44.613 59.474h-25.225v-18.606h25.225v18.606zM19.387 4.526h25.225v5.166h-25.225v-5.166zM4.517 14.217h54.967v35.566h-10.354v-8.914h4.018c1.116-0.163 1.963-1.114 1.963-2.263s-0.847-2.099-1.951-2.261l-0.012-0.002h-42.245c-1.116 0.163-1.963 1.114-1.963 2.263s0.847 2.099 1.951 2.261l0.012 0.002h4.023v8.914h-10.409v-35.566zM43.95 25.829h5.838c1.116-0.163 1.963-1.114 1.963-2.263s-0.847-2.099-1.951-2.261l-0.012-0.002h-5.838c-1.116 0.163-1.963 1.114-1.963 2.263s0.847 2.099 1.951 2.261l0.012 0.002z"/> 
-        </symbol>
-        <symbol id="icon-rip-active" viewBox="0 0 57 64">
-        <title>Icon-rip</title> <path style="fill:none!important" stroke-width="2.7234" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M5.447 1.362h46.298c2.256 0 4.085 1.829 4.085 4.085v53.106c0 2.256-1.829 4.085-4.085 4.085h-46.298c-2.256 0-4.085-1.829-4.085-4.085v-53.106c0-2.256 1.829-4.085 4.085-4.085z"/> <path style="stroke:none!important" d="M2.723 2.723h53.106v6.808h-53.106v-6.809z"/> <path style="stroke:none!important" d="M14.979 23.149v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 28.596v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 34.043v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 39.489v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 44.936v-1.362h14.979v1.362h-14.979z"/> <path fill="#ffa53b" stroke="#fff" stroke-width="2.7234" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M5.978 1.362h32.15l-5.324 37.868c-0.291 1.922-1.662 3.461-3.465 3.993l-0.035 0.009-27.942 4.428v-40.579c0-3.124 2.083-5.719 4.616-5.719z"/> <path style="fill:none!important" stroke-width="2.7234" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M38.128 4.085c-8.3 3.69-15.184 9.264-20.329 16.204l-0.096 0.136c-5.444 7.444-10.044 15.996-13.387 25.154l-0.229 0.719"/> 
-        </symbol>
-        <symbol id="icon-rip" viewBox="0 0 57 64">
-        <title>Icon-rip</title> <path style="fill:none!important" stroke-width="2.7234" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M5.447 1.362h46.298c2.256 0 4.085 1.829 4.085 4.085v53.106c0 2.256-1.829 4.085-4.085 4.085h-46.298c-2.256 0-4.085-1.829-4.085-4.085v-53.106c0-2.256 1.829-4.085 4.085-4.085z"/> <path style="stroke:none!important" d="M2.723 2.723h53.106v6.808h-53.106v-6.809z"/> <path style="stroke:none!important" d="M14.979 23.149v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 28.596v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 34.043v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 39.489v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 44.936v-1.362h14.979v1.362h-14.979z"/> <path fill="#fff" stroke-width="2.7234" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M5.978 1.362h32.15l-5.324 37.868c-0.291 1.922-1.662 3.461-3.465 3.993l-0.035 0.009-27.942 4.428v-40.579c0-3.124 2.083-5.719 4.616-5.719z"/> <path style="fill:none!important" stroke-width="2.7234" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M38.128 4.085c-8.3 3.69-15.184 9.264-20.329 16.204l-0.096 0.136c-5.444 7.444-10.044 15.996-13.387 25.154l-0.229 0.719"/> 
-        </symbol>
-        <symbol id="icon-settings" viewBox="0 0 64 64">
-        <title>Icon-settings</title> <path fill="#fb951c" d="M35.986 64l-0.241-2.406c-0.18-1.927-1.789-3.424-3.748-3.424s-3.568 1.497-3.747 3.409l-0.001 0.015-0.241 2.406-2.378-0.486c-4.404-0.894-8.302-2.578-11.723-4.909l0.11 0.071-1.664-1.126 0.975-1.766c0.303-0.522 0.485-1.148 0.492-1.816v-0.002c-0.022-2.081-1.714-3.76-3.799-3.76-0.662 0-1.285 0.169-1.827 0.468l0.020-0.010-1.759 0.973-1.126-1.664c-2.268-3.305-3.96-7.197-4.828-11.39l-0.036-0.207-0.479-2.381 2.414-0.256c1.925-0.173 3.423-1.778 3.423-3.734 0-0.001 0-0.003 0-0.004v0c-0.004-1.96-1.496-3.571-3.407-3.762l-0.016-0.001-2.414-0.23 0.479-2.381c0.899-4.4 2.591-8.293 4.934-11.704l-0.070 0.108 1.126-1.664 1.759 0.973c0.52 0.284 1.139 0.451 1.798 0.451 2.084 0 3.777-1.674 3.809-3.75l0-0.003c-0.007-0.67-0.188-1.295-0.501-1.836l0.010 0.018-0.975-1.766 1.664-1.126c3.31-2.268 7.207-3.96 11.405-4.828l0.207-0.036 2.378-0.461 0.241 2.406c0.18 1.927 1.789 3.424 3.748 3.424s3.568-1.497 3.747-3.409l0.001-0.015 0.241-2.406 2.378 0.461c4.404 0.904 8.301 2.596 11.719 4.935l-0.109-0.071 1.661 1.126-0.97 1.766c-0.303 0.522-0.485 1.148-0.492 1.816v0.002c0.031 2.080 1.724 3.755 3.809 3.755 0.659 0 1.279-0.167 1.82-0.462l-0.020 0.010 1.766-0.973 1.126 1.664c2.263 3.305 3.946 7.198 4.803 11.392l0.035 0.205 0.486 2.381-2.406 0.23c-1.931 0.185-3.429 1.799-3.43 3.763v0c0 0.004 0 0.008 0 0.013 0 1.956 1.503 3.561 3.417 3.724l0.014 0.001 2.406 0.256-0.486 2.381c-0.897 4.398-2.581 8.29-4.91 11.707l0.071-0.111-1.126 1.664-1.766-0.973c-0.523-0.288-1.145-0.457-1.808-0.457-2.085 0-3.778 1.678-3.801 3.757v0.002c0.007 0.67 0.188 1.295 0.501 1.836l-0.010-0.018 0.97 1.766-1.661 1.126c-3.31 2.261-7.207 3.944-11.404 4.803l-0.206 0.035zM31.997 53.76c0.002 0 0.004 0 0.007 0 3.349 0 6.227 2.023 7.476 4.914l0.020 0.053c2.486-0.701 4.655-1.644 6.66-2.835l-0.127 0.070c-0.161-0.599-0.254-1.286-0.256-1.996v-0.001c0.009-4.521 3.671-8.183 8.191-8.192h0.001c0.714 0.010 1.4 0.103 2.058 0.269l-0.061-0.013c1.124-1.877 2.068-4.045 2.718-6.336l0.047-0.192c-2.943-1.273-4.965-4.151-4.965-7.501s2.022-6.228 4.912-7.48l0.053-0.020c-0.703-2.494-1.646-4.67-2.836-6.683l0.071 0.13c-0.588 0.163-1.264 0.256-1.961 0.256-0.013 0-0.025 0-0.038-0h0.002c0 0 0 0-0 0-4.515 0-8.177-3.653-8.192-8.165v-0.001c0-0.005 0-0.010 0-0.016 0-0.704 0.093-1.386 0.269-2.035l-0.013 0.055c-1.878-1.129-4.047-2.080-6.338-2.742l-0.195-0.048c-1.273 2.944-4.152 4.967-7.503 4.967s-6.231-2.023-7.483-4.914l-0.020-0.053c-2.486 0.709-4.655 1.661-6.658 2.86l0.125-0.069c0.163 0.594 0.256 1.277 0.256 1.981 0 0.006 0 0.011 0 0.017v-0.001c-0.015 4.513-3.677 8.166-8.192 8.166 0 0 0 0 0 0v0c-0.016 0-0.034 0-0.053 0-0.688 0-1.354-0.093-1.986-0.268l0.052 0.012c-1.122 1.884-2.070 4.060-2.729 6.357l-0.048 0.197c2.943 1.273 4.965 4.151 4.965 7.501s-2.022 6.228-4.912 7.48l-0.053 0.020c0.702 2.483 1.649 4.651 2.846 6.652l-0.069-0.124c0.594-0.155 1.277-0.247 1.981-0.256l0.005-0c4.521 0.009 8.183 3.671 8.192 8.191v0.001c-0.002 0.71-0.095 1.398-0.269 2.053l0.013-0.056c1.878 1.122 4.048 2.065 6.34 2.718l0.193 0.047c1.269-2.943 4.146-4.966 7.495-4.966 0.004 0 0.008 0 0.012 0h-0.001zM31.997 42.189c-0.001 0-0.002 0-0.003 0-5.627 0-10.189-4.562-10.189-10.189s4.562-10.189 10.189-10.189c5.627 0 10.189 4.562 10.189 10.189v0c-0.009 5.622-4.562 10.177-10.183 10.189h-0.001zM31.997 26.214c-3.192 0.004-5.778 2.593-5.778 5.786 0 3.195 2.59 5.786 5.786 5.786s5.786-2.59 5.786-5.786v0c-0.003-3.196-2.594-5.786-5.791-5.786 0 0 0 0 0 0v0z"/> 
-        </symbol>
-        <symbol id="icon-transfer" viewBox="0 0 117 64">
-        <title>icon-transfer</title> <path fill="none" stroke="#ffa53b" stroke-width="3.7647" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M1.882 1.882h112.941v60.235h-112.941v-60.235z"/> <path fill="#ffa53b" d="M11.294 9.412c1.040 0 1.882 0.843 1.882 1.882s-0.843 1.882-1.882 1.882c-1.040 0-1.882-0.843-1.882-1.882s0.843-1.882 1.882-1.882z"/> <path fill="#ffa53b" d="M11.294 50.824c1.040 0 1.882 0.843 1.882 1.882s-0.843 1.882-1.882 1.882c-1.040 0-1.882-0.843-1.882-1.882s0.843-1.882 1.882-1.882z"/> <path fill="#ffa53b" d="M41.412 50.824h3.765c1.040 0 1.882 0.843 1.882 1.882s-0.843 1.882-1.882 1.882h-3.765c-1.040 0-1.882-0.843-1.882-1.882s0.843-1.882 1.882-1.882z"/> <path fill="#ffa53b" d="M52.706 50.824h11.294c1.040 0 1.882 0.843 1.882 1.882s-0.843 1.882-1.882 1.882h-11.294c-1.040 0-1.882-0.843-1.882-1.882s0.843-1.882 1.882-1.882z"/> <path fill="#ffa53b" d="M41.412 35.765h37.647c1.040 0 1.882 0.843 1.882 1.882s-0.843 1.882-1.882 1.882h-37.647c-1.040 0-1.882-0.843-1.882-1.882s0.843-1.882 1.882-1.882z"/> <path fill="#ffa53b" d="M41.412 28.235h58.353c1.040 0 1.882 0.843 1.882 1.882s-0.843 1.882-1.882 1.882h-58.353c-1.040 0-1.882-0.843-1.882-1.882s0.843-1.882 1.882-1.882z"/> <path fill="#ffa53b" d="M41.412 20.706h58.353c1.040 0 1.882 0.843 1.882 1.882s-0.843 1.882-1.882 1.882h-58.353c-1.040 0-1.882-0.843-1.882-1.882s0.843-1.882 1.882-1.882z"/> <path fill="#ffa53b" d="M41.412 9.412h15.059c1.040 0 1.882 0.843 1.882 1.882s-0.843 1.882-1.882 1.882h-15.059c-1.040 0-1.882-0.843-1.882-1.882s0.843-1.882 1.882-1.882z"/> <path fill="#ffa53b" stroke="#ffa53b" stroke-width="1.8824" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M22.009 32.377h-1.338v2.692h5.252v2.918h-5.252v3.407h-3.917v-3.407h-1.673v-2.918h1.673v-2.692h-1.673v-2.918h1.673v-10.202c1.859-0.274 4.005-0.432 6.188-0.433h0.001c5.184 0 7.153 3.049 7.153 6.268 0.009 3.256-1.529 7.285-8.087 7.285zM22.385 21.817c-0.039-0.001-0.086-0.001-0.132-0.001-0.557 0-1.101 0.055-1.628 0.16l0.053-0.009v7.492h1.205c0.181 0.033 0.389 0.053 0.601 0.053 1.914 0 3.465-1.552 3.465-3.465 0-0.211-0.019-0.417-0.055-0.618l0.003 0.021c0.020-0.136 0.032-0.293 0.032-0.452 0-1.767-1.433-3.2-3.2-3.2-0.124 0-0.247 0.007-0.367 0.021l0.015-0.001z"/> 
-        </symbol>
-        <symbol id="icon-upload" viewBox="0 0 43 64">
-        <title>Icon-upload</title> <path fill="#ffa53b" d="M2.645 34.389l15.104-15.104c0.787-0.915 1.947-1.491 3.241-1.491 2.356 0 4.267 1.91 4.267 4.267 0 1.294-0.576 2.453-1.486 3.236l-0.006 0.005-15.061 15.147c-0.775 0.775-1.846 1.255-3.029 1.255-2.366 0-4.284-1.918-4.284-4.284 0-1.183 0.48-2.254 1.255-3.029v0z"/> <path fill="#ffa53b" d="M39.765 34.389l-15.104-15.104c-0.787-0.915-1.947-1.491-3.241-1.491-2.356 0-4.267 1.91-4.267 4.267 0 1.294 0.576 2.453 1.486 3.236l0.006 0.005 15.061 15.147c0.775 0.775 1.846 1.255 3.029 1.255 2.366 0 4.284-1.918 4.284-4.284 0-1.183-0.48-2.254-1.255-3.029v0z"/> <path fill="#ffa53b" d="M25.557 57.899v-30.549c0.176-0.465 0.277-1.002 0.277-1.563 0-2.51-2.034-4.544-4.544-4.544s-4.544 2.034-4.544 4.544c0 0.561 0.102 1.098 0.288 1.595l-0.010-0.031v30.549c-0.176 0.465-0.277 1.002-0.277 1.563 0 2.51 2.034 4.544 4.544 4.544s4.544-2.034 4.544-4.544c0-0.561-0.102-1.098-0.288-1.594l0.010 0.031z"/> <path fill="#ffa53b" d="M4.267 0h34.133c2.356 0 4.267 1.91 4.267 4.267s-1.91 4.267-4.267 4.267h-34.133c-2.356 0-4.267-1.91-4.267-4.267s1.91-4.267 4.267-4.267z"/> 
-        </symbol>
-        <symbol id="icon-wireo" viewBox="0 0 57 64">
-        <title>Icon-wireo</title> <path style="fill:none!important" stroke-width="2.7234" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M5.447 2.723h46.298c2.256 0 4.085 1.829 4.085 4.085v51.745c0 2.256-1.829 4.085-4.085 4.085h-46.298c-2.256 0-4.085-1.829-4.085-4.085v-51.745c0-2.256 1.829-4.085 4.085-4.085z"/> <path style="stroke:none!important" d="M2.723 12.255h53.106v2.723h-53.106v-2.723z"/> <path style="stroke:none!important" d="M6.809 0h2.723v6.809h-2.723v-6.809z"/> <path style="stroke:none!important" d="M12.255 0h2.723v6.809h-2.723v-6.809z"/> <path style="stroke:none!important" d="M17.702 0h2.723v6.809h-2.723v-6.809z"/> <path style="stroke:none!important" d="M36.766 0h2.723v6.809h-2.723v-6.809z"/> <path style="stroke:none!important" d="M42.213 0h2.723v6.809h-2.723v-6.809z"/> <path style="stroke:none!important" d="M47.66 0h2.723v6.809h-2.723v-6.809z"/> <path style="stroke:none!important" d="M14.979 27.234v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 32.681v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 38.128v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 43.574v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 49.021v-1.362h14.979v1.362h-14.979z"/> 
-        </symbol>
-        <symbol id="input-attention" viewBox="0 0 5 64">
-        <title>input-attention</title> <path fill="#f00" d="M4.617-0.055h-4.434l-0.137 50.286h4.48z"/> <path fill="#f00" d="M4.617 59.429h-4.434l-0.137 4.571h4.48z"/> 
-        </symbol>
-        <symbol id="input-tick" viewBox="0 0 92 64">
-        <title>input-tick</title> <path fill="#2ebc67" d="M0 33.116l5.049-4.878 31.716 30.884-4.978 4.878z"/> <path fill="#2ebc67" d="M92.444 4.871l-5.049-4.878-60.729 59.129 5.049 4.878z"/> 
-        </symbol>
-        <symbol id="slider-arrow" viewBox="0 0 38 64">
-        <title>Slider-Arrow</title> <path fill="#fb951c" d="M0 5.335l5.383-5.335 32.264 32-5.383 5.335z"/> <path fill="#fb951c" d="M37.647 32l-5.383-5.331-32.264 32 5.383 5.335z"/> 
-        </symbol>
-        <symbol id="star-sm" viewBox="0 0 66 64">
-        <title>star-sm</title> <path fill="#fbc91c" d="M66.32 24.32c-0.14-0.426-0.507-0.739-0.954-0.799l-0.006-0.001-21.488-3.2-9.6-19.712c-0.206-0.366-0.592-0.609-1.035-0.609-0.013 0-0.026 0-0.039 0.001l0.002-0c-0.003 0-0.007-0-0.010-0-0.462 0-0.861 0.268-1.051 0.657l-0.003 0.007-9.6 19.712-21.488 3.2c-0.452 0.063-0.818 0.375-0.958 0.792l-0.002 0.008c-0.036 0.11-0.057 0.236-0.057 0.367 0 0.338 0.138 0.644 0.361 0.864l15.544 15.344-3.672 21.664c-0.010 0.058-0.015 0.126-0.015 0.194 0 0.399 0.19 0.754 0.484 0.979l0.003 0.002c0.193 0.143 0.435 0.229 0.697 0.229 0.205 0 0.397-0.052 0.565-0.144l-0.006 0.003 19.2-10.232 19.2 10.232c0.158 0.086 0.346 0.136 0.545 0.136 0.005 0 0.010-0 0.016-0h-0.001c0.001 0 0.002 0 0.003 0 0.26 0 0.501-0.084 0.696-0.226l-0.003 0.002c0.298-0.224 0.489-0.577 0.489-0.975 0-0.071-0.006-0.141-0.018-0.209l0.001 0.007-3.672-21.664 15.552-15.344c0.238-0.224 0.386-0.541 0.386-0.892 0-0.142-0.024-0.278-0.068-0.405l0.003 0.009z"/> 
-        </symbol>
-        <symbol id="star" viewBox="0 0 69 64">
-        <title>star</title> <path fill="#fbc91c" d="M69.093 24.323c-0.162-0.426-0.532-0.738-0.984-0.814l-22.414-3.167-10.020-19.709c-0.188-0.4-0.587-0.673-1.050-0.673-0.018 0-0.036 0-0.053 0.001l0.002-0c-0.475 0.008-0.886 0.275-1.098 0.665l-0.003 0.007-10.020 19.715-22.352 3.16c-0.617 0.041-1.102 0.552-1.102 1.176 0 0.345 0.149 0.656 0.385 0.871l0.001 0.001 16.186 15.344-3.799 21.669c-0.016 0.071-0.026 0.153-0.026 0.237 0 0.393 0.206 0.739 0.517 0.933l0.005 0.003c0.205 0.147 0.461 0.235 0.738 0.235 0.213 0 0.414-0.052 0.591-0.144l-0.007 0.003 19.985-10.229 20.040 10.229c0.16 0.083 0.349 0.133 0.549 0.138h0.001c0.005 0 0.010 0 0.015 0 0.282 0 0.544-0.086 0.76-0.234l-0.005 0.003c0.31-0.226 0.508-0.587 0.508-0.995 0-0.063-0.005-0.124-0.014-0.184l0.001 0.007-3.854-21.669 16.186-15.343c0.239-0.214 0.389-0.523 0.389-0.868 0-0.131-0.022-0.256-0.061-0.374l0.002 0.008z"/> 
-        </symbol>
-        <symbol id="user" viewBox="0 0 61 64">
-        <title>User</title> <path fill="none" stroke="#ffa53b" stroke-width="5.0526" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="miter" d="M36.85 34.169c2.783 1.908 6.010 3.442 9.467 4.43l0.234 0.057c3.788 0.934 6.553 4.302 6.553 8.315 0 0.33-0.019 0.656-0.055 0.977l0.004-0.039c0.007 0.233 0.011 0.508 0.011 0.783 0 1.706-0.151 3.377-0.44 5l0.025-0.171c-0.211 0.829-0.765 1.5-1.499 1.862l-0.017 0.007c-6.417 3.309-14.005 5.249-22.046 5.249-0.421 0-0.84-0.005-1.258-0.016l0.062 0.001"/> <path fill="none" stroke="#ffa53b" stroke-width="5.0526" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="miter" d="M18.728 34.169c-2.783 1.908-6.010 3.442-9.467 4.43l-0.234 0.057c-3.788 0.934-6.553 4.302-6.553 8.315 0 0.33 0.019 0.656 0.055 0.977l-0.004-0.039c-0.007 0.233-0.011 0.508-0.011 0.783 0 1.706 0.151 3.377 0.44 5l-0.025-0.171c0.211 0.829 0.765 1.5 1.499 1.862l0.017 0.007c6.417 3.309 14.005 5.249 22.046 5.249 0.421 0 0.84-0.005 1.258-0.016l-0.062 0.001"/> <path fill="none" stroke="#ffa53b" stroke-width="5.0526" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M27.79 3.368c5.845 0.625 10.483 5.085 11.376 10.787l0.009 0.072c0.048 0.665 0.076 1.44 0.076 2.221s-0.028 1.557-0.082 2.325l0.006-0.103v4.443c-0.304 6.052-5.285 10.845-11.385 10.845s-11.082-4.792-11.384-10.818l-0.001-0.027v-4.443c0-1.563-0.034-2.957 0-4.443 0.921-5.765 5.55-10.215 11.327-10.855l0.058-0.005z"/> 
-        </symbol>
+    <symbol id="attention-circle" viewBox="0 0 64 64">
+       <title>attention-circle</title> <path fill="#ffa53b" d="M32 17.446c-0.003 0-0.006 0-0.009 0-1.349 0-2.444 1.093-2.446 2.441v14.080c-0.001 0.023-0.001 0.049-0.001 0.076 0 1.356 1.099 2.456 2.456 2.456s2.456-1.099 2.456-2.456c0-0.027-0-0.054-0.001-0.080l0 0.004v-14.080c-0.003-1.349-1.097-2.442-2.446-2.442-0.002 0-0.005 0-0.008 0h0zM32 39.609c-1.357 0.007-2.454 1.108-2.456 2.465v1.47c-0.001 0.023-0.001 0.049-0.001 0.076 0 1.356 1.099 2.456 2.456 2.456s2.456-1.099 2.456-2.456c0-0.027-0-0.054-0.001-0.080l0 0.004v-1.47c0 0 0 0 0 0 0-1.357-1.097-2.458-2.453-2.465h-0.001z"/> <path fill="none" stroke="#ffa53b" stroke-width="4.7407" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M61.63 32c0 16.364-13.266 29.63-29.63 29.63s-29.63-13.266-29.63-29.63c0-16.364 13.266-29.63 29.63-29.63s29.63 13.266 29.63 29.63z"/> 
+    </symbol>
+    <symbol id="check-tick" viewBox="0 0 91 64">
+       <title>check-tick</title> <path fill="#fff" d="M0 27.794l7.131-7.314 35.566 36.297-7.131 7.223z"/> <path fill="#fff" d="M91.429 7.223l-7.131-7.223-55.68 56.777 7.131 7.223z"/> 
+    </symbol>
+    <symbol id="cross" viewBox="0 0 64 64">
+       <title>cross</title> <path fill="#ffa53b" d="M9.138 1.505l53.217 53.217c0.971 0.974 1.571 2.319 1.571 3.803 0 2.976-2.412 5.388-5.388 5.388-1.491 0-2.841-0.606-3.816-1.585l-53.217-53.217c-0.971-0.974-1.571-2.319-1.571-3.803 0-2.976 2.412-5.388 5.388-5.388 1.491 0 2.841 0.606 3.816 1.585l0 0z"/> <path fill="#ffa53b" d="M54.722 1.505l-53.217 53.217c-0.971 0.974-1.571 2.319-1.571 3.803 0 2.976 2.412 5.388 5.388 5.388 1.491 0 2.841-0.606 3.816-1.585l53.217-53.217c0.971-0.974 1.571-2.319 1.571-3.803 0-2.976-2.412-5.388-5.388-5.388-1.491 0-2.841 0.606-3.816 1.585l-0 0z"/> 
+    </symbol>
+    <symbol id="expand" viewBox="0 0 97 64">
+       <title>expand</title> <path fill="#ffa53b" d="M93.374 19.511l-37.307 41.059c-1.845 2.077-4.523 3.378-7.504 3.378s-5.659-1.302-7.495-3.368l-0.009-0.010c-1.899-2.185-3.056-5.058-3.056-8.201s1.157-6.016 3.069-8.216l-0.013 0.015 37.414-41.059c1.801-2.121 4.47-3.458 7.451-3.458s5.65 1.337 7.439 3.444l0.012 0.014c1.945 2.166 3.134 5.045 3.134 8.201s-1.189 6.035-3.144 8.212l0.010-0.011z"/> <path fill="#ffa53b" d="M3.109 19.511l37.307 41.059c1.845 2.077 4.523 3.378 7.504 3.378s5.659-1.302 7.495-3.368l0.009-0.010c1.899-2.185 3.056-5.058 3.056-8.201s-1.157-6.016-3.069-8.216l0.013 0.015-37.414-41.059c-1.801-2.121-4.47-3.458-7.451-3.458s-5.65 1.337-7.439 3.444l-0.012 0.014c-1.945 2.166-3.134 5.045-3.134 8.201s1.189 6.035 3.144 8.212l-0.010-0.011z"/> 
+    </symbol>
+    <symbol id="icon-ava" viewBox="0 0 47 64">
+       <title>Icon-ava</title> <path style="fill:none!important" stroke-width="2.6122" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M5.224 2.612h35.265c2.885 0 5.224 2.339 5.224 5.225v0 48.327c0 2.885-2.339 5.224-5.224 5.224v0h-35.265c-2.164 0-3.918-1.754-3.918-3.918v0-50.939c0-2.164 1.754-3.918 3.918-3.918v0z"/> <path style="stroke:none!important" d="M35.265 0c0.721 0 1.306 0.585 1.306 1.306v61.388c0 0.721-0.585 1.306-1.306 1.306s-1.306-0.585-1.306-1.306v-61.388c0-0.721 0.585-1.306 1.306-1.306z"/> 
+    </symbol>
+    <symbol id="icon-calculator" viewBox="0 0 50 64">
+       <title>Icon-Calculator</title> <path fill="none" stroke="#ffa53b" stroke-width="2.1573" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M3.955 1.079h41.708c1.589 0 2.876 1.288 2.876 2.876v56.090c0 1.589-1.288 2.876-2.876 2.876h-41.708c-1.589 0-2.876-1.288-2.876-2.876v-56.090c0-1.589 1.288-2.876 2.876-2.876z"/> <path fill="none" stroke="#ffa53b" stroke-width="2.1573" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M8.72 8.809h32.18v15.461h-32.18v-15.461z"/> <path fill="#ffa53b" d="M11.776 32.091h3.864v2.561h-3.864v-2.561z"/> <path fill="#ffa53b" d="M22.831 32.091h3.955v2.561h-3.955v-2.561z"/> <path fill="#ffa53b" d="M33.977 32.091h3.866v2.561h-3.866v-2.561z"/> <path fill="#ffa53b" d="M11.776 41.573h3.864v2.563h-3.864v-2.563z"/> <path fill="#ffa53b" d="M22.831 41.573h3.955v2.563h-3.955v-2.563z"/> <path fill="#ffa53b" d="M33.977 41.573h3.866v2.563h-3.866v-2.563z"/> <path fill="#ffa53b" d="M11.776 51.101h3.864v2.517h-3.864v-2.517z"/> <path fill="#ffa53b" d="M22.831 51.101h3.955v2.517h-3.955v-2.517z"/> <path fill="#ffa53b" d="M33.977 51.101h3.866v2.517h-3.866v-2.517z"/> 
+    </symbol>
+    <symbol id="icon-cards" viewBox="0 0 82 64">
+       <title>Icon-cards</title> <path fill="#ffa53b" d="M10.24 46.080v-2.56h-5.12c-1.414 0-2.56-1.146-2.56-2.56v-35.84c0-1.414 1.146-2.56 2.56-2.56h58.88c1.414 0 2.56 1.146 2.56 2.56v10.24h2.56v-10.24c0-2.828-2.292-5.12-5.12-5.12h-58.88c-2.828 0-5.12 2.292-5.12 5.12v35.84c0 2.828 2.292 5.12 5.12 5.12h5.12zM76.8 64h-58.88c-2.828 0-5.12-2.292-5.12-5.12v0-35.84c0-2.828 2.292-5.12 5.12-5.12v0h58.88c2.828 0 5.12 2.292 5.12 5.12v0 35.84c0 2.828-2.292 5.12-5.12 5.12v0zM17.92 20.48c-1.414 0-2.56 1.146-2.56 2.56v0 35.84c0 1.414 1.146 2.56 2.56 2.56v0h58.88c1.414 0 2.56-1.146 2.56-2.56v0-35.84c0-1.414-1.146-2.56-2.56-2.56v0h-58.88zM40.96 51.2h-0.002c0.012 0 0.024 0 0.036 0 2.852 0 5.43-1.176 7.277-3.072l-1.828-1.792-0.001 0.001c-1.394 1.421-3.336 2.303-5.483 2.303-4.242 0-7.68-3.438-7.68-7.68s3.438-7.68 7.68-7.68c2.148 0 4.090 0.882 5.485 2.304l1.828-1.792-0.002-0.002c-1.858-1.895-4.447-3.070-7.311-3.070-5.655 0-10.24 4.585-10.24 10.24s4.585 10.24 10.24 10.24c0.001 0 0.001 0 0.001 0zM53.76 51.2c-5.655 0-10.24-4.585-10.24-10.24s4.585-10.24 10.24-10.24c5.655 0 10.24 4.585 10.24 10.24v0c-0.007 5.652-4.588 10.233-10.239 10.24h-0.001zM53.76 33.28c-4.242 0-7.68 3.438-7.68 7.68s3.438 7.68 7.68 7.68c4.242 0 7.68-3.438 7.68-7.68v0c-0.004-4.24-3.44-7.676-7.68-7.68h-0zM66.56 7.68h-64v-2.56h64v2.56zM10.24 20.48h-7.68v-2.56h7.68v2.56zM10.24 30.72h-5.12v-2.56h5.12v2.56zM25.6 42.24h-2.56v-2.56h2.56v2.56zM71.68 42.24h-2.56v-2.56h2.56v2.56zM61.44 12.8h-12.8v-2.56h12.8v2.56zM46.080 12.8h-5.12v-2.56h5.12v2.56z"/> 
+    </symbol>
+    <symbol id="icon-cart" viewBox="0 0 72 64">
+       <title>icon-cart</title> <path fill="#ffa53b" d="M14.871 6.735h-0.151c0.188 0.161 0.34 0.358 0.447 0.58l0.005 0.011zM62.569 46.012c-4.559 0.018-8.312 3.445-8.843 7.863l-0.004 0.043h-20.254c-0.375-2.89-2.063-5.321-4.437-6.704l-0.043-0.023 1.92-4.518h33.845c2.598-0.429 4.555-2.658 4.555-5.345 0-0.016-0-0.032-0-0.048v0.002-26.052c1.147-0.118 2.033-1.079 2.033-2.248s-0.887-2.129-2.024-2.247l-0.010-0.001h-54.438l0.301 0.591c-0.112-0.233-0.264-0.43-0.449-0.589l-0.002-0.002h0.151l-2.108-4.314c-0.759-1.505-2.293-2.52-4.064-2.52-0.334 0-0.66 0.036-0.973 0.105l0.030-0.005h-5.534c-1.13 0.135-1.998 1.088-1.998 2.244s0.868 2.109 1.988 2.243l0.011 0.001h5.647c0.301 0 0.678 0 0.941 0l2.296 4.71 0.038 0.105c0.026 0.040 0.051 0.075 0.077 0.108l-0.002-0.002c-0.001 0.004-0.001 0.009-0.001 0.014 0 0.036 0.015 0.068 0.038 0.091v0l0.264 0.655 12.311 28.857c0.553 1.205 1.419 2.186 2.495 2.864l0.027 0.016-1.732 4.096h-0.038c-0.014-0-0.030-0-0.046-0-4.967 0-8.994 4.027-8.994 8.994s4.027 8.994 8.994 8.994c3.743 0 6.952-2.286 8.306-5.538l0.022-0.059h21.421c1.378 3.287 4.569 5.553 8.29 5.553 4.951 0 8.964-4.013 8.964-8.964s-4.013-8.964-8.964-8.964c-0.002 0-0.005 0-0.008 0h0zM16.828 11.23h48v26.041c-0.095 0.354-0.25 0.664-0.456 0.932l0.005-0.006h-35.501c-0.407-0.205-0.731-0.523-0.936-0.914l-0.006-0.012zM24.584 59.501c-0.005 0-0.010 0-0.015 0-2.483 0-4.495-2.013-4.495-4.495s2.012-4.495 4.495-4.495c2.483 0 4.495 2.013 4.495 4.495v0c0 0.005 0 0.010 0 0.015 0 2.475-2.005 4.482-4.48 4.484h-0zM62.569 59.501c-0.005 0-0.010 0-0.015 0-2.483 0-4.495-2.013-4.495-4.495s2.013-4.495 4.495-4.495c2.483 0 4.495 2.013 4.495 4.495v0c0 0.007 0 0.015 0 0.023 0 2.472-2.004 4.476-4.476 4.476-0.001 0-0.003 0-0.004 0h0zM11.219 9.431c-0.024-0.030-0.049-0.065-0.072-0.101l-0.003-0.005 0.113 0.215c-0.026-0.024-0.042-0.057-0.042-0.095 0-0.012 0.002-0.023 0.005-0.034l-0 0.001zM11.257 9.536c0.052 0.248 0.143 0.467 0.268 0.663l-0.005-0.008zM14.871 6.746h-0.151c0.188 0.161 0.34 0.358 0.447 0.58l0.005 0.011zM58.127 13.485c-1.248 0-2.259 1.011-2.259 2.259v17.969c0 1.248 1.011 2.259 2.259 2.259v0c1.227-0.002 2.221-0.997 2.221-2.225 0-0.012-0-0.024-0-0.036v0.002-17.991c0-0.006 0-0.012 0-0.019 0-1.227-0.994-2.223-2.221-2.225h-0zM49.167 13.485c-1.227 0.002-2.221 0.997-2.221 2.225 0 0.012 0 0.024 0 0.036v-0.002 17.969c-0 0.010-0 0.022-0 0.034 0 1.228 0.994 2.223 2.221 2.225h0c1.248 0 2.259-1.011 2.259-2.259v0-17.991c-0.009-1.241-1.017-2.244-2.259-2.244 0 0-0 0-0 0v0zM40.245 13.485c-1.248 0-2.259 1.011-2.259 2.259v17.969c0 1.248 1.011 2.259 2.259 2.259v0c1.227-0.002 2.221-0.997 2.221-2.225 0-0.012-0-0.024-0-0.036v0.002-17.991c0-0.006 0-0.012 0-0.019 0-1.227-0.994-2.223-2.221-2.225h-0zM31.285 13.485c-1.227 0.002-2.221 0.997-2.221 2.225 0 0.012 0 0.024 0 0.036v-0.002 17.969c-0 0.010-0 0.022-0 0.034 0 1.228 0.994 2.223 2.221 2.225h0c1.247 0 2.259-1.011 2.259-2.259v0-17.991c-0.009-1.241-1.017-2.244-2.259-2.244 0 0-0 0-0 0v0z"/> 
+    </symbol>
+    <symbol id="icon-cashbox" viewBox="0 0 68 64">
+       <title>Icon-cashbox</title> <path fill="#ffa53b" d="M67.114 64h-66.027c-0.589 0-1.067-0.478-1.067-1.067v0-9.6h2.133v8.533h63.9v-8.533h2.133v9.6c0 0 0 0 0 0 0 0.589-0.478 1.067-1.067 1.067-0.002 0-0.004 0-0.007 0h0zM68.106 49.749l-7.381-19.008v-16.875c0-0.589-0.478-1.067-1.067-1.067v0h-7.456v-2.133h5.323c0.589 0 1.067-0.478 1.067-1.067v0-8.533c0-0.589-0.478-1.067-1.067-1.067v0h-19.168c-0.589 0-1.067 0.478-1.067 1.067v0 8.533c0 0.589 0.478 1.067 1.067 1.067v0h5.323v2.133h-10.645v2.133h25.557v14.933h-48.992v-14.933h2.133v7.467c0 0.589 0.478 1.067 1.067 1.067v0h17.035c0.589 0 1.067-0.478 1.067-1.067v0-17.067c0-0.003 0-0.007 0-0.011 0-0.292-0.118-0.556-0.309-0.747l-2.133-2.133c-0.193-0.192-0.459-0.31-0.752-0.31s-0.559 0.119-0.752 0.31l0-0-1.376 1.387-1.376-1.387c-0.193-0.192-0.459-0.31-0.752-0.31s-0.559 0.119-0.752 0.31l0-0-1.376 1.387-1.376-1.387c-0.196-0.19-0.463-0.307-0.757-0.309h-0c-0.294 0.004-0.56 0.121-0.758 0.31l0-0-1.376 1.387-1.376-1.387c-0.196-0.183-0.461-0.296-0.752-0.296s-0.556 0.113-0.753 0.297l0.001-0.001-2.133 2.133c-0.19 0.196-0.307 0.463-0.309 0.757v7.467h-3.189c-0.589 0-1.067 0.478-1.067 1.067v0 16.875l-7.381 19.008c-0.045 0.114-0.071 0.246-0.071 0.384 0 0.588 0.476 1.065 1.063 1.067h66.027c0.587-0.007 1.061-0.485 1.061-1.073 0-0.136-0.025-0.266-0.071-0.385l0.002 0.007zM39.423 8.533v-6.4h17.045v6.4h-17.045zM50.079 12.8h-4.267v-2.133h4.267v2.133zM13.866 5.771l1.067-1.067 1.376 1.387c0.193 0.192 0.459 0.31 0.752 0.31s0.559-0.119 0.752-0.31l-0 0 1.376-1.387 1.376 1.387c0.196 0.19 0.463 0.307 0.757 0.309h0c0.291-0.002 0.555-0.12 0.747-0.309l-0 0 1.376-1.387 1.387 1.387c0.193 0.192 0.459 0.31 0.752 0.31s0.559-0.119 0.752-0.31l-0 0 1.376-1.387 1.067 1.067v15.563h-14.912v-15.563zM2.644 49.067l6.624-17.067h49.664l6.624 17.067h-62.912zM55.398 27.733h-21.298c-0.589 0-1.067-0.478-1.067-1.067v0-8.533c0-0.589 0.478-1.067 1.067-1.067v0h21.299c0.589 0 1.067 0.478 1.067 1.067v0 8.533c0 0.589-0.478 1.067-1.067 1.067-0 0-0.001 0-0.001 0h0zM35.167 25.6h19.17v-6.4h-19.17v6.4zM26.647 14.933h-10.651v-2.133h10.651v2.133zM26.647 19.2h-10.651v-2.133h10.651v2.133zM47.947 37.333h-2.133v-2.133h2.133v2.133zM45.813 41.6h-2.133v-2.133h2.133v2.133zM50.074 41.6h-2.133v-2.133h2.133v2.133zM47.94 45.867h-2.133v-2.133h2.133v2.133zM52.201 45.867h-2.133v-2.133h2.133v2.133zM43.681 37.333h-2.133v-2.133h2.133v2.133zM54.331 41.6h-2.133v-2.133h2.133v2.133zM56.464 45.867h-2.133v-2.133h2.133v2.133zM52.204 37.333h-2.133v-2.133h2.133v2.133zM41.554 41.6h-2.133v-2.133h2.133v2.133zM43.687 45.867h-2.133v-2.133h2.133v2.133zM39.427 37.333h-2.133v-2.133h2.133v2.133zM37.294 41.6h-2.133v-2.133h2.133v2.133zM35.161 37.333h-2.133v-2.133h2.133v2.133zM33.027 41.6h-2.133v-2.133h2.133v2.133zM30.894 37.333h-2.133v-2.133h2.133v2.133zM28.761 41.6h-2.133v-2.133h2.133v2.133zM26.627 37.333h-2.133v-2.133h2.133v2.133zM24.494 41.6h-2.133v-2.133h2.133v2.133zM26.627 45.867h-2.133v-2.133h2.133v2.133zM22.367 37.333h-2.133v-2.133h2.133v2.133zM22.367 45.867h-2.133v-2.133h2.133v2.133zM20.234 41.6h-2.133v-2.133h2.133v2.133zM18.1 45.867h-2.133v-2.133h2.133v2.133zM18.1 37.333h-2.133v-2.133h2.133v2.133zM15.967 41.6h-2.133v-2.133h2.133v2.133zM13.834 45.867h-2.133v-2.133h2.133v2.133zM39.394 45.867h-2.133v-2.133h2.133v2.133zM35.167 45.867h-2.133v-2.133h2.133v2.133zM30.9 45.867h-2.133v-2.133h2.133v2.133zM30.9 27.733h-19.167v-2.133h19.167v2.133zM18.121 10.667h-2.133v-2.133h2.133v2.133zM22.381 10.667h-2.133v-2.133h2.133v2.133zM26.641 10.667h-2.133v-2.133h2.133v2.133zM39.421 23.467h-2.133v-2.133h2.133v2.133zM43.681 23.467h-2.133v-2.133h2.133v2.133zM47.94 23.467h-2.133v-2.133h2.133v2.133zM52.201 23.467h-2.133v-2.133h2.133v2.133zM54.334 6.4h-12.78v-2.133h12.78v2.133zM34.1 58.667c-1.178 0-2.133-0.955-2.133-2.133s0.955-2.133 2.133-2.133c1.178 0 2.133 0.955 2.133 2.133v0c0 1.178-0.955 2.133-2.133 2.133v0zM27.71 57.6h-21.301v-2.133h21.3v2.133zM61.79 57.6h-21.301v-2.133h21.3v2.133z"/> 
+    </symbol>
+    <symbol id="icon-clip" viewBox="0 0 57 64">
+       <title>Icon-clip</title> <path style="fill:none!important" stroke-width="2.7234" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M5.447 1.362h46.298c2.256 0 4.085 1.829 4.085 4.085v53.106c0 2.256-1.829 4.085-4.085 4.085h-46.298c-2.256 0-4.085-1.829-4.085-4.085v-53.106c0-2.256 1.829-4.085 4.085-4.085z"/> <path style="stroke:none!important" d="M19.064 8.17h19.064v2.723h-19.064v-2.723z"/> <path style="stroke:none!important" d="M14.979 25.872v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 31.319v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 36.766v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 42.213v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 47.66v-1.362h14.979v1.362h-14.979z"/> 
+    </symbol>
+    <symbol id="icon-glue" viewBox="0 0 57 64">
+       <title>Icon-glue</title> <path style="fill:none!important" stroke-width="2.7234" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M5.447 1.362h46.298c2.256 0 4.085 1.829 4.085 4.085v53.106c0 2.256-1.829 4.085-4.085 4.085h-46.298c-2.256 0-4.085-1.829-4.085-4.085v-53.106c0-2.256 1.829-4.085 4.085-4.085z"/> <path style="stroke:none!important" d="M2.723 2.723h53.106v6.808h-53.106v-6.809z"/> <path style="stroke:none!important" d="M14.979 23.149v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 28.596v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 34.043v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 39.489v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 44.936v-1.362h14.979v1.362h-14.979z"/> 
+    </symbol>
+    <symbol id="icon-heart" viewBox="0 0 70 64">
+       <title>Icon-heart</title> <path fill="#ff4200" d="M64.175 5.935c-3.436-3.622-8.284-5.876-13.659-5.876-5.389 0-10.248 2.266-13.678 5.896l-0.008 0.009-1.891 1.978-1.949-2.007c-3.43-3.657-8.292-5.935-13.686-5.935-5.38 0-10.231 2.266-13.65 5.896l-0.009 0.009c-3.495 3.705-5.644 8.714-5.644 14.225 0 5.526 2.16 10.547 5.682 14.265l-0.009-0.010 27.811 29.004c0.35 0.374 0.846 0.608 1.396 0.611h0.001c0.56-0.002 1.065-0.236 1.425-0.61l0.001-0.001 27.84-28.916c3.513-3.719 5.673-8.75 5.673-14.285 0-5.52-2.148-10.538-5.654-14.264l0.010 0.011z"/> 
+    </symbol>
+    <symbol id="icon-lock" viewBox="0 0 52 64">
+       <title>icon-lock</title> <path fill="#afb0b3" d="M38.091 23.154h-0.807v-6.922c-0.159-8.999-7.492-16.234-16.514-16.234-0.085 0-0.17 0.001-0.254 0.002l0.013-0c-0.151-0.005-0.329-0.008-0.508-0.008-8.702 0-15.808 6.832-16.247 15.425l-0.002 0.039c0 0.155 0 7.552 0 7.707h3.070c0-0.179 0-7.277 0-7.455 0.521-7.142 6.444-12.74 13.674-12.74 7.419 0 13.461 5.893 13.701 13.254l0.001 0.022v6.922h-31.251c-0.013-0-0.029-0-0.044-0-1.592 0-2.887 1.273-2.922 2.857l-0 0.003v18.5c0.086 4.773 3.976 8.608 8.761 8.608 0.044 0 0.088-0 0.131-0.001l-0.007 0h23.284c0.037 0.001 0.081 0.001 0.125 0.001 4.786 0 8.675-3.835 8.763-8.6l0-0.008v-18.5c-0.028-1.592-1.326-2.872-2.922-2.872-0.015 0-0.031 0-0.046 0h0.002zM37.989 44.525c-0.055 3.124-2.601 5.635-5.733 5.635-0.031 0-0.062-0-0.092-0.001l0.005 0h-23.272c-0.026 0-0.057 0.001-0.088 0.001-3.131 0-5.676-2.511-5.73-5.63l-0-0.005v-18.401h34.91v18.401zM20.533 43.921c2.988-0.102 5.371-2.548 5.371-5.552 0-3.068-2.487-5.555-5.555-5.555-3.067 0-5.553 2.485-5.555 5.551v0c0.057 3.080 2.567 5.555 5.655 5.555 0.027 0 0.055-0 0.082-0.001l-0.004 0zM20.533 35.765c1.403 0.036 2.526 1.182 2.526 2.591 0 1.431-1.16 2.591-2.591 2.591-1.429 0-2.588-1.157-2.591-2.585v-0c0.020-1.438 1.191-2.596 2.632-2.596 0.007 0 0.014 0 0.021 0h-0.001z"/> <path fill="#2ebc67" stroke="#fff" stroke-width="2.4151" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M50.717 49.509c0 7.336-5.947 13.283-13.283 13.283s-13.283-5.947-13.283-13.283c0-7.336 5.947-13.283 13.283-13.283s13.283 5.947 13.283 13.283z"/> <path fill="#fff" d="M33.811 49.889l1.671-1.657 3.297 3.239-1.671 1.657z"/> <path fill="#fff" d="M42.846 47.546l-1.674-1.659-5.661 5.579 1.681 1.666z"/> 
+    </symbol>
+    <symbol id="icon-pdf" viewBox="0 0 50 64">
+       <title>Icon-pdf</title> <path fill="#fff" d="M49.495 19.017c-0.441-1.237-1.083-2.301-1.896-3.209l0.008 0.009-12.251-12.983c-0.83-0.843-1.822-1.522-2.926-1.989l-0.059-0.022c-1.011-0.486-2.194-0.786-3.443-0.823l-0.013-0h-25.143c-0.023-0.001-0.050-0.001-0.077-0.001-1.026 0-1.948 0.44-2.59 1.141l-0.002 0.003c-0.682 0.715-1.103 1.687-1.103 2.756 0 0.028 0 0.055 0.001 0.083l-0-0.004v56.046c-0.001 0.023-0.001 0.050-0.001 0.077 0 1.055 0.421 2.012 1.103 2.712l-0.001-0.001c0.627 0.73 1.552 1.19 2.584 1.19 0.030 0 0.060-0 0.090-0.001l-0.004 0h42.734c0.025 0.001 0.054 0.001 0.084 0.001 1.032 0 1.958-0.459 2.582-1.185l0.004-0.004c0.679-0.701 1.098-1.658 1.098-2.712 0-0.027-0-0.054-0.001-0.080l0 0.004v-37.349c-0.028-1.326-0.311-2.579-0.802-3.722l0.025 0.065zM30.171 5.669c0.623 0.199 1.161 0.512 1.613 0.918l-0.004-0.004 12.293 13.029c0.395 0.487 0.693 1.069 0.857 1.706l0.007 0.031h-14.766v-15.68zM45.257 58.651h-40.229v-53.303h20.114v17.326c-0 0.023-0.001 0.050-0.001 0.078 0 1.069 0.418 2.040 1.1 2.758l-0.002-0.002c0.646 0.704 1.57 1.144 2.597 1.144 0.027 0 0.054-0 0.081-0.001l-0.004 0h16.343v32z"/> 
+    </symbol>
+    <symbol id="icon-pen-active" viewBox="0 0 60 64">
+       <title>Icon-pen</title> <path style="fill:none!important" stroke-width="2.7234" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M5.447 2.723h46.298c2.256 0 4.085 1.829 4.085 4.085v51.745c0 2.256-1.829 4.085-4.085 4.085h-46.298c-2.256 0-4.085-1.829-4.085-4.085v-51.745c0-2.256 1.829-4.085 4.085-4.085z"/> <path style="stroke:none!important" d="M2.723 12.255h53.106v2.723h-53.106v-2.723z"/> <path style="stroke:none!important" d="M6.809 0h2.723v6.809h-2.723v-6.809z"/> <path style="stroke:none!important" d="M12.255 0h2.723v6.809h-2.723v-6.809z"/> <path style="stroke:none!important" d="M17.702 0h2.723v6.809h-2.723v-6.809z"/> <path style="stroke:none!important" d="M36.766 0h2.723v6.809h-2.723v-6.809z"/> <path style="stroke:none!important" d="M42.213 0h2.723v6.809h-2.723v-6.809z"/> <path style="stroke:none!important" d="M47.66 0h2.723v6.809h-2.723v-6.809z"/> <path style="stroke:none!important" d="M14.979 27.234v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 32.681v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 38.128v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 43.574v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 49.021v-1.362h14.979v1.362h-14.979z"/> <path fill="#ffa53b" style="stroke:none!important" d="M44.936 0h14.979v64h-14.979v-64z"/> <path style="stroke:none!important" d="M55.83 41.332h-2.723v-2.587h2.723v2.587zM54.468 43.919v0zM55.83 49.085h-2.723v-2.587h2.723v2.587zM58.553 3.877h-1.362v-2.587c-0.023-0.718-0.61-1.291-1.331-1.291-0.011 0-0.022 0-0.032 0h-2.722c-0.009-0-0.020-0-0.031-0-0.721 0-1.309 0.573-1.331 1.289l-0 0.002v2.587h-1.362c-0.009-0-0.020-0-0.031-0-0.722 0-1.309 0.574-1.331 1.291l-0 0.002v48.443c0.001 0.213 0.057 0.413 0.153 0.588l-0.003-0.006 4.085 7.751c0.242 0.427 0.694 0.71 1.212 0.71s0.969-0.283 1.208-0.704l0.004-0.007 4.085-7.751c0.093-0.168 0.148-0.368 0.15-0.581v-48.45c-0.022-0.718-0.609-1.293-1.331-1.293-0.011 0-0.021 0-0.032 0h0.002zM51.745 6.464h1.362v20.669h2.723v-20.68h1.362v27.128h-5.447v-27.128zM51.745 36.176h5.447v15.502h-5.447v-15.513zM54.468 58.473l-2.22-4.212h4.439z"/> 
+    </symbol>
+    <symbol id="icon-pen" viewBox="0 0 60 64">
+       <title>Icon-pen</title> <path style="fill:none!important" stroke-width="2.7234" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M5.447 2.723h46.298c2.256 0 4.085 1.829 4.085 4.085v51.745c0 2.256-1.829 4.085-4.085 4.085h-46.298c-2.256 0-4.085-1.829-4.085-4.085v-51.745c0-2.256 1.829-4.085 4.085-4.085z"/> <path style="stroke:none!important" d="M2.723 12.255h53.106v2.723h-53.106v-2.723z"/> <path style="stroke:none!important" d="M6.809 0h2.723v6.809h-2.723v-6.809z"/> <path style="stroke:none!important" d="M12.255 0h2.723v6.809h-2.723v-6.809z"/> <path style="stroke:none!important" d="M17.702 0h2.723v6.809h-2.723v-6.809z"/> <path style="stroke:none!important" d="M36.766 0h2.723v6.809h-2.723v-6.809z"/> <path style="stroke:none!important" d="M42.213 0h2.723v6.809h-2.723v-6.809z"/> <path style="stroke:none!important" d="M47.66 0h2.723v6.809h-2.723v-6.809z"/> <path style="stroke:none!important" d="M14.979 27.234v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 32.681v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 38.128v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 43.574v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 49.021v-1.362h14.979v1.362h-14.979z"/> <path fill="#fff" style="stroke:none!important" d="M44.936 0h14.979v64h-14.979v-64z"/> <path style="stroke:none!important" d="M55.83 41.332h-2.723v-2.587h2.723v2.587zM54.468 43.919v0zM55.83 49.085h-2.723v-2.587h2.723v2.587zM58.553 3.877h-1.362v-2.587c-0.023-0.718-0.61-1.291-1.331-1.291-0.011 0-0.022 0-0.032 0h-2.722c-0.009-0-0.020-0-0.031-0-0.721 0-1.309 0.573-1.331 1.289l-0 0.002v2.587h-1.362c-0.009-0-0.020-0-0.031-0-0.722 0-1.309 0.574-1.331 1.291l-0 0.002v48.443c0.001 0.213 0.057 0.413 0.153 0.588l-0.003-0.006 4.085 7.751c0.242 0.427 0.694 0.71 1.212 0.71s0.969-0.283 1.208-0.704l0.004-0.007 4.085-7.751c0.093-0.168 0.148-0.368 0.15-0.581v-48.45c-0.022-0.718-0.609-1.293-1.331-1.293-0.011 0-0.021 0-0.032 0h0.002zM51.745 6.464h1.362v20.669h2.723v-20.68h1.362v27.128h-5.447v-27.128zM51.745 36.176h5.447v15.502h-5.447v-15.513zM54.468 58.473l-2.22-4.212h4.439z"/> 
+    </symbol>
+    <symbol id="icon-pin" viewBox="0 0 45 64">
+       <title>Icon-pin</title> <path fill="#ffa53b" d="M38.486 6.575c-4.087-4.063-9.721-6.574-15.941-6.574s-11.854 2.511-15.942 6.575l0.001-0.001c-7.881 7.825-8.86 22.56-2.122 31.491l18.064 25.935 18.036-25.905c6.764-8.96 5.785-23.695-2.096-31.52zM22.753 30.385c-4.499-0.026-8.135-3.679-8.135-8.182 0-4.519 3.663-8.182 8.182-8.182s8.182 3.663 8.182 8.182c0 0.003 0 0.005 0 0.008v-0c-0.021 4.519-3.689 8.175-8.211 8.175-0.006 0-0.012 0-0.018 0h0.001z"/> 
+    </symbol>
+    <symbol id="icon-print" viewBox="0 0 64 64">
+       <title>Icon-print</title> <path fill="#fff" d="M2.258 54.309h12.613v7.451c0 0 0 0 0 0 0 1.237 1.003 2.24 2.24 2.24 0.006 0 0.013 0 0.019-0h29.741c0.005 0 0.012 0 0.018 0 1.237 0 2.24-1.003 2.24-2.24 0 0 0-0 0-0v0-7.451h12.613c0.005 0 0.012 0 0.018 0 1.237 0 2.24-1.003 2.24-2.24 0 0 0-0 0-0v0-40.137c0 0 0-0 0-0 0-1.237-1.003-2.24-2.24-2.24-0.006 0-0.013 0-0.019 0h-12.612v-7.451c0 0 0-0 0-0 0-1.237-1.003-2.24-2.24-2.24-0.006 0-0.013 0-0.019 0h-29.741c-0.005-0-0.012-0-0.018-0-1.237 0-2.24 1.003-2.24 2.24 0 0 0 0 0 0v0 7.451h-12.613c-0.005-0-0.012-0-0.018-0-1.237 0-2.24 1.003-2.24 2.24 0 0 0 0 0 0v0 40.137c0.025 1.233 1.024 2.225 2.257 2.24h0.001zM44.613 59.474h-25.225v-18.606h25.225v18.606zM19.387 4.526h25.225v5.166h-25.225v-5.166zM4.517 14.217h54.967v35.566h-10.354v-8.914h4.018c1.116-0.163 1.963-1.114 1.963-2.263s-0.847-2.099-1.951-2.261l-0.012-0.002h-42.245c-1.116 0.163-1.963 1.114-1.963 2.263s0.847 2.099 1.951 2.261l0.012 0.002h4.023v8.914h-10.409v-35.566zM43.95 25.829h5.838c1.116-0.163 1.963-1.114 1.963-2.263s-0.847-2.099-1.951-2.261l-0.012-0.002h-5.838c-1.116 0.163-1.963 1.114-1.963 2.263s0.847 2.099 1.951 2.261l0.012 0.002z"/> 
+    </symbol>
+    <symbol id="icon-rip-active" viewBox="0 0 57 64">
+       <title>Icon-rip</title> <path style="fill:none!important" stroke-width="2.7234" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M5.447 1.362h46.298c2.256 0 4.085 1.829 4.085 4.085v53.106c0 2.256-1.829 4.085-4.085 4.085h-46.298c-2.256 0-4.085-1.829-4.085-4.085v-53.106c0-2.256 1.829-4.085 4.085-4.085z"/> <path style="stroke:none!important" d="M2.723 2.723h53.106v6.808h-53.106v-6.809z"/> <path style="stroke:none!important" d="M14.979 23.149v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 28.596v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 34.043v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 39.489v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 44.936v-1.362h14.979v1.362h-14.979z"/> <path fill="#ffa53b" stroke="#fff" stroke-width="2.7234" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M5.978 1.362h32.15l-5.324 37.868c-0.291 1.922-1.662 3.461-3.465 3.993l-0.035 0.009-27.942 4.428v-40.579c0-3.124 2.083-5.719 4.616-5.719z"/> <path style="fill:none!important" stroke-width="2.7234" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M38.128 4.085c-8.3 3.69-15.184 9.264-20.329 16.204l-0.096 0.136c-5.444 7.444-10.044 15.996-13.387 25.154l-0.229 0.719"/> 
+    </symbol>
+    <symbol id="icon-rip" viewBox="0 0 57 64">
+       <title>Icon-rip</title> <path style="fill:none!important" stroke-width="2.7234" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M5.447 1.362h46.298c2.256 0 4.085 1.829 4.085 4.085v53.106c0 2.256-1.829 4.085-4.085 4.085h-46.298c-2.256 0-4.085-1.829-4.085-4.085v-53.106c0-2.256 1.829-4.085 4.085-4.085z"/> <path style="stroke:none!important" d="M2.723 2.723h53.106v6.808h-53.106v-6.809z"/> <path style="stroke:none!important" d="M14.979 23.149v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 28.596v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 34.043v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 39.489v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 44.936v-1.362h14.979v1.362h-14.979z"/> <path fill="#fff" stroke-width="2.7234" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M5.978 1.362h32.15l-5.324 37.868c-0.291 1.922-1.662 3.461-3.465 3.993l-0.035 0.009-27.942 4.428v-40.579c0-3.124 2.083-5.719 4.616-5.719z"/> <path style="fill:none!important" stroke-width="2.7234" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M38.128 4.085c-8.3 3.69-15.184 9.264-20.329 16.204l-0.096 0.136c-5.444 7.444-10.044 15.996-13.387 25.154l-0.229 0.719"/> 
+    </symbol>
+    <symbol id="icon-settings" viewBox="0 0 64 64">
+       <title>Icon-settings</title> <path fill="#fb951c" d="M35.986 64l-0.241-2.406c-0.18-1.927-1.789-3.424-3.748-3.424s-3.568 1.497-3.747 3.409l-0.001 0.015-0.241 2.406-2.378-0.486c-4.404-0.894-8.302-2.578-11.723-4.909l0.11 0.071-1.664-1.126 0.975-1.766c0.303-0.522 0.485-1.148 0.492-1.816v-0.002c-0.022-2.081-1.714-3.76-3.799-3.76-0.662 0-1.285 0.169-1.827 0.468l0.020-0.010-1.759 0.973-1.126-1.664c-2.268-3.305-3.96-7.197-4.828-11.39l-0.036-0.207-0.479-2.381 2.414-0.256c1.925-0.173 3.423-1.778 3.423-3.734 0-0.001 0-0.003 0-0.004v0c-0.004-1.96-1.496-3.571-3.407-3.762l-0.016-0.001-2.414-0.23 0.479-2.381c0.899-4.4 2.591-8.293 4.934-11.704l-0.070 0.108 1.126-1.664 1.759 0.973c0.52 0.284 1.139 0.451 1.798 0.451 2.084 0 3.777-1.674 3.809-3.75l0-0.003c-0.007-0.67-0.188-1.295-0.501-1.836l0.010 0.018-0.975-1.766 1.664-1.126c3.31-2.268 7.207-3.96 11.405-4.828l0.207-0.036 2.378-0.461 0.241 2.406c0.18 1.927 1.789 3.424 3.748 3.424s3.568-1.497 3.747-3.409l0.001-0.015 0.241-2.406 2.378 0.461c4.404 0.904 8.301 2.596 11.719 4.935l-0.109-0.071 1.661 1.126-0.97 1.766c-0.303 0.522-0.485 1.148-0.492 1.816v0.002c0.031 2.080 1.724 3.755 3.809 3.755 0.659 0 1.279-0.167 1.82-0.462l-0.020 0.010 1.766-0.973 1.126 1.664c2.263 3.305 3.946 7.198 4.803 11.392l0.035 0.205 0.486 2.381-2.406 0.23c-1.931 0.185-3.429 1.799-3.43 3.763v0c0 0.004 0 0.008 0 0.013 0 1.956 1.503 3.561 3.417 3.724l0.014 0.001 2.406 0.256-0.486 2.381c-0.897 4.398-2.581 8.29-4.91 11.707l0.071-0.111-1.126 1.664-1.766-0.973c-0.523-0.288-1.145-0.457-1.808-0.457-2.085 0-3.778 1.678-3.801 3.757v0.002c0.007 0.67 0.188 1.295 0.501 1.836l-0.010-0.018 0.97 1.766-1.661 1.126c-3.31 2.261-7.207 3.944-11.404 4.803l-0.206 0.035zM31.997 53.76c0.002 0 0.004 0 0.007 0 3.349 0 6.227 2.023 7.476 4.914l0.020 0.053c2.486-0.701 4.655-1.644 6.66-2.835l-0.127 0.070c-0.161-0.599-0.254-1.286-0.256-1.996v-0.001c0.009-4.521 3.671-8.183 8.191-8.192h0.001c0.714 0.010 1.4 0.103 2.058 0.269l-0.061-0.013c1.124-1.877 2.068-4.045 2.718-6.336l0.047-0.192c-2.943-1.273-4.965-4.151-4.965-7.501s2.022-6.228 4.912-7.48l0.053-0.020c-0.703-2.494-1.646-4.67-2.836-6.683l0.071 0.13c-0.588 0.163-1.264 0.256-1.961 0.256-0.013 0-0.025 0-0.038-0h0.002c0 0 0 0-0 0-4.515 0-8.177-3.653-8.192-8.165v-0.001c0-0.005 0-0.010 0-0.016 0-0.704 0.093-1.386 0.269-2.035l-0.013 0.055c-1.878-1.129-4.047-2.080-6.338-2.742l-0.195-0.048c-1.273 2.944-4.152 4.967-7.503 4.967s-6.231-2.023-7.483-4.914l-0.020-0.053c-2.486 0.709-4.655 1.661-6.658 2.86l0.125-0.069c0.163 0.594 0.256 1.277 0.256 1.981 0 0.006 0 0.011 0 0.017v-0.001c-0.015 4.513-3.677 8.166-8.192 8.166 0 0 0 0 0 0v0c-0.016 0-0.034 0-0.053 0-0.688 0-1.354-0.093-1.986-0.268l0.052 0.012c-1.122 1.884-2.070 4.060-2.729 6.357l-0.048 0.197c2.943 1.273 4.965 4.151 4.965 7.501s-2.022 6.228-4.912 7.48l-0.053 0.020c0.702 2.483 1.649 4.651 2.846 6.652l-0.069-0.124c0.594-0.155 1.277-0.247 1.981-0.256l0.005-0c4.521 0.009 8.183 3.671 8.192 8.191v0.001c-0.002 0.71-0.095 1.398-0.269 2.053l0.013-0.056c1.878 1.122 4.048 2.065 6.34 2.718l0.193 0.047c1.269-2.943 4.146-4.966 7.495-4.966 0.004 0 0.008 0 0.012 0h-0.001zM31.997 42.189c-0.001 0-0.002 0-0.003 0-5.627 0-10.189-4.562-10.189-10.189s4.562-10.189 10.189-10.189c5.627 0 10.189 4.562 10.189 10.189v0c-0.009 5.622-4.562 10.177-10.183 10.189h-0.001zM31.997 26.214c-3.192 0.004-5.778 2.593-5.778 5.786 0 3.195 2.59 5.786 5.786 5.786s5.786-2.59 5.786-5.786v0c-0.003-3.196-2.594-5.786-5.791-5.786 0 0 0 0 0 0v0z"/> 
+    </symbol>
+    <symbol id="icon-transfer" viewBox="0 0 117 64">
+       <title>icon-transfer</title> <path fill="none" stroke="#ffa53b" stroke-width="3.7647" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M1.882 1.882h112.941v60.235h-112.941v-60.235z"/> <path fill="#ffa53b" d="M11.294 9.412c1.040 0 1.882 0.843 1.882 1.882s-0.843 1.882-1.882 1.882c-1.040 0-1.882-0.843-1.882-1.882s0.843-1.882 1.882-1.882z"/> <path fill="#ffa53b" d="M11.294 50.824c1.040 0 1.882 0.843 1.882 1.882s-0.843 1.882-1.882 1.882c-1.040 0-1.882-0.843-1.882-1.882s0.843-1.882 1.882-1.882z"/> <path fill="#ffa53b" d="M41.412 50.824h3.765c1.040 0 1.882 0.843 1.882 1.882s-0.843 1.882-1.882 1.882h-3.765c-1.040 0-1.882-0.843-1.882-1.882s0.843-1.882 1.882-1.882z"/> <path fill="#ffa53b" d="M52.706 50.824h11.294c1.040 0 1.882 0.843 1.882 1.882s-0.843 1.882-1.882 1.882h-11.294c-1.040 0-1.882-0.843-1.882-1.882s0.843-1.882 1.882-1.882z"/> <path fill="#ffa53b" d="M41.412 35.765h37.647c1.040 0 1.882 0.843 1.882 1.882s-0.843 1.882-1.882 1.882h-37.647c-1.040 0-1.882-0.843-1.882-1.882s0.843-1.882 1.882-1.882z"/> <path fill="#ffa53b" d="M41.412 28.235h58.353c1.040 0 1.882 0.843 1.882 1.882s-0.843 1.882-1.882 1.882h-58.353c-1.040 0-1.882-0.843-1.882-1.882s0.843-1.882 1.882-1.882z"/> <path fill="#ffa53b" d="M41.412 20.706h58.353c1.040 0 1.882 0.843 1.882 1.882s-0.843 1.882-1.882 1.882h-58.353c-1.040 0-1.882-0.843-1.882-1.882s0.843-1.882 1.882-1.882z"/> <path fill="#ffa53b" d="M41.412 9.412h15.059c1.040 0 1.882 0.843 1.882 1.882s-0.843 1.882-1.882 1.882h-15.059c-1.040 0-1.882-0.843-1.882-1.882s0.843-1.882 1.882-1.882z"/> <path fill="#ffa53b" stroke="#ffa53b" stroke-width="1.8824" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M22.009 32.377h-1.338v2.692h5.252v2.918h-5.252v3.407h-3.917v-3.407h-1.673v-2.918h1.673v-2.692h-1.673v-2.918h1.673v-10.202c1.859-0.274 4.005-0.432 6.188-0.433h0.001c5.184 0 7.153 3.049 7.153 6.268 0.009 3.256-1.529 7.285-8.087 7.285zM22.385 21.817c-0.039-0.001-0.086-0.001-0.132-0.001-0.557 0-1.101 0.055-1.628 0.16l0.053-0.009v7.492h1.205c0.181 0.033 0.389 0.053 0.601 0.053 1.914 0 3.465-1.552 3.465-3.465 0-0.211-0.019-0.417-0.055-0.618l0.003 0.021c0.020-0.136 0.032-0.293 0.032-0.452 0-1.767-1.433-3.2-3.2-3.2-0.124 0-0.247 0.007-0.367 0.021l0.015-0.001z"/> 
+    </symbol>
+    <symbol id="icon-upload" viewBox="0 0 43 64">
+       <title>Icon-upload</title> <path fill="#ffa53b" d="M2.645 34.389l15.104-15.104c0.787-0.915 1.947-1.491 3.241-1.491 2.356 0 4.267 1.91 4.267 4.267 0 1.294-0.576 2.453-1.486 3.236l-0.006 0.005-15.061 15.147c-0.775 0.775-1.846 1.255-3.029 1.255-2.366 0-4.284-1.918-4.284-4.284 0-1.183 0.48-2.254 1.255-3.029v0z"/> <path fill="#ffa53b" d="M39.765 34.389l-15.104-15.104c-0.787-0.915-1.947-1.491-3.241-1.491-2.356 0-4.267 1.91-4.267 4.267 0 1.294 0.576 2.453 1.486 3.236l0.006 0.005 15.061 15.147c0.775 0.775 1.846 1.255 3.029 1.255 2.366 0 4.284-1.918 4.284-4.284 0-1.183-0.48-2.254-1.255-3.029v0z"/> <path fill="#ffa53b" d="M25.557 57.899v-30.549c0.176-0.465 0.277-1.002 0.277-1.563 0-2.51-2.034-4.544-4.544-4.544s-4.544 2.034-4.544 4.544c0 0.561 0.102 1.098 0.288 1.595l-0.010-0.031v30.549c-0.176 0.465-0.277 1.002-0.277 1.563 0 2.51 2.034 4.544 4.544 4.544s4.544-2.034 4.544-4.544c0-0.561-0.102-1.098-0.288-1.594l0.010 0.031z"/> <path fill="#ffa53b" d="M4.267 0h34.133c2.356 0 4.267 1.91 4.267 4.267s-1.91 4.267-4.267 4.267h-34.133c-2.356 0-4.267-1.91-4.267-4.267s1.91-4.267 4.267-4.267z"/> 
+    </symbol>
+    <symbol id="icon-wireo" viewBox="0 0 57 64">
+       <title>Icon-wireo</title> <path style="fill:none!important" stroke-width="2.7234" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M5.447 2.723h46.298c2.256 0 4.085 1.829 4.085 4.085v51.745c0 2.256-1.829 4.085-4.085 4.085h-46.298c-2.256 0-4.085-1.829-4.085-4.085v-51.745c0-2.256 1.829-4.085 4.085-4.085z"/> <path style="stroke:none!important" d="M2.723 12.255h53.106v2.723h-53.106v-2.723z"/> <path style="stroke:none!important" d="M6.809 0h2.723v6.809h-2.723v-6.809z"/> <path style="stroke:none!important" d="M12.255 0h2.723v6.809h-2.723v-6.809z"/> <path style="stroke:none!important" d="M17.702 0h2.723v6.809h-2.723v-6.809z"/> <path style="stroke:none!important" d="M36.766 0h2.723v6.809h-2.723v-6.809z"/> <path style="stroke:none!important" d="M42.213 0h2.723v6.809h-2.723v-6.809z"/> <path style="stroke:none!important" d="M47.66 0h2.723v6.809h-2.723v-6.809z"/> <path style="stroke:none!important" d="M14.979 27.234v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 32.681v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 38.128v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 43.574v-1.362h27.234v1.362h-27.234z"/> <path style="stroke:none!important" d="M14.979 49.021v-1.362h14.979v1.362h-14.979z"/> 
+    </symbol>
+    <symbol id="input-attention" viewBox="0 0 5 64">
+       <title>input-attention</title> <path fill="#f00" d="M4.617-0.055h-4.434l-0.137 50.286h4.48z"/> <path fill="#f00" d="M4.617 59.429h-4.434l-0.137 4.571h4.48z"/> 
+    </symbol>
+    <symbol id="input-tick" viewBox="0 0 92 64">
+       <title>input-tick</title> <path fill="#2ebc67" d="M0 33.116l5.049-4.878 31.716 30.884-4.978 4.878z"/> <path fill="#2ebc67" d="M92.444 4.871l-5.049-4.878-60.729 59.129 5.049 4.878z"/> 
+    </symbol>
+    <symbol id="menu" viewBox="0 0 32 32">
+       <title>menu</title> <path d="M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z"/> 
+    </symbol>
+    <symbol id="slider-arrow" viewBox="0 0 38 64">
+       <title>Slider-Arrow</title> <path fill="#fb951c" d="M0 5.335l5.383-5.335 32.264 32-5.383 5.335z"/> <path fill="#fb951c" d="M37.647 32l-5.383-5.331-32.264 32 5.383 5.335z"/> 
+    </symbol>
+    <symbol id="star-sm" viewBox="0 0 66 64">
+       <title>star-sm</title> <path fill="#fbc91c" d="M66.32 24.32c-0.14-0.426-0.507-0.739-0.954-0.799l-0.006-0.001-21.488-3.2-9.6-19.712c-0.206-0.366-0.592-0.609-1.035-0.609-0.013 0-0.026 0-0.039 0.001l0.002-0c-0.003 0-0.007-0-0.010-0-0.462 0-0.861 0.268-1.051 0.657l-0.003 0.007-9.6 19.712-21.488 3.2c-0.452 0.063-0.818 0.375-0.958 0.792l-0.002 0.008c-0.036 0.11-0.057 0.236-0.057 0.367 0 0.338 0.138 0.644 0.361 0.864l15.544 15.344-3.672 21.664c-0.010 0.058-0.015 0.126-0.015 0.194 0 0.399 0.19 0.754 0.484 0.979l0.003 0.002c0.193 0.143 0.435 0.229 0.697 0.229 0.205 0 0.397-0.052 0.565-0.144l-0.006 0.003 19.2-10.232 19.2 10.232c0.158 0.086 0.346 0.136 0.545 0.136 0.005 0 0.010-0 0.016-0h-0.001c0.001 0 0.002 0 0.003 0 0.26 0 0.501-0.084 0.696-0.226l-0.003 0.002c0.298-0.224 0.489-0.577 0.489-0.975 0-0.071-0.006-0.141-0.018-0.209l0.001 0.007-3.672-21.664 15.552-15.344c0.238-0.224 0.386-0.541 0.386-0.892 0-0.142-0.024-0.278-0.068-0.405l0.003 0.009z"/> 
+    </symbol>
+    <symbol id="star" viewBox="0 0 69 64">
+       <title>star</title> <path fill="#fbc91c" d="M69.093 24.323c-0.162-0.426-0.532-0.738-0.984-0.814l-22.414-3.167-10.020-19.709c-0.188-0.4-0.587-0.673-1.050-0.673-0.018 0-0.036 0-0.053 0.001l0.002-0c-0.475 0.008-0.886 0.275-1.098 0.665l-0.003 0.007-10.020 19.715-22.352 3.16c-0.617 0.041-1.102 0.552-1.102 1.176 0 0.345 0.149 0.656 0.385 0.871l0.001 0.001 16.186 15.344-3.799 21.669c-0.016 0.071-0.026 0.153-0.026 0.237 0 0.393 0.206 0.739 0.517 0.933l0.005 0.003c0.205 0.147 0.461 0.235 0.738 0.235 0.213 0 0.414-0.052 0.591-0.144l-0.007 0.003 19.985-10.229 20.040 10.229c0.16 0.083 0.349 0.133 0.549 0.138h0.001c0.005 0 0.010 0 0.015 0 0.282 0 0.544-0.086 0.76-0.234l-0.005 0.003c0.31-0.226 0.508-0.587 0.508-0.995 0-0.063-0.005-0.124-0.014-0.184l0.001 0.007-3.854-21.669 16.186-15.343c0.239-0.214 0.389-0.523 0.389-0.868 0-0.131-0.022-0.256-0.061-0.374l0.002 0.008z"/> 
+    </symbol>
+    <symbol id="user" viewBox="0 0 61 64">
+       <title>User</title> <path fill="none" stroke="#ffa53b" stroke-width="5.0526" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="miter" d="M36.85 34.169c2.783 1.908 6.010 3.442 9.467 4.43l0.234 0.057c3.788 0.934 6.553 4.302 6.553 8.315 0 0.33-0.019 0.656-0.055 0.977l0.004-0.039c0.007 0.233 0.011 0.508 0.011 0.783 0 1.706-0.151 3.377-0.44 5l0.025-0.171c-0.211 0.829-0.765 1.5-1.499 1.862l-0.017 0.007c-6.417 3.309-14.005 5.249-22.046 5.249-0.421 0-0.84-0.005-1.258-0.016l0.062 0.001"/> <path fill="none" stroke="#ffa53b" stroke-width="5.0526" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="miter" d="M18.728 34.169c-2.783 1.908-6.010 3.442-9.467 4.43l-0.234 0.057c-3.788 0.934-6.553 4.302-6.553 8.315 0 0.33 0.019 0.656 0.055 0.977l-0.004-0.039c-0.007 0.233-0.011 0.508-0.011 0.783 0 1.706 0.151 3.377 0.44 5l-0.025-0.171c0.211 0.829 0.765 1.5 1.499 1.862l0.017 0.007c6.417 3.309 14.005 5.249 22.046 5.249 0.421 0 0.84-0.005 1.258-0.016l-0.062 0.001"/> <path fill="none" stroke="#ffa53b" stroke-width="5.0526" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M27.79 3.368c5.845 0.625 10.483 5.085 11.376 10.787l0.009 0.072c0.048 0.665 0.076 1.44 0.076 2.221s-0.028 1.557-0.082 2.325l0.006-0.103v4.443c-0.304 6.052-5.285 10.845-11.385 10.845s-11.082-4.792-11.384-10.818l-0.001-0.027v-4.443c0-1.563-0.034-2.957 0-4.443 0.921-5.765 5.55-10.215 11.327-10.855l0.058-0.005z"/> 
+    </symbol>
     </svg>
 
     <script src="js/main.min.js"></script>
