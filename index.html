@@ -10,48 +10,56 @@
 <body class="main-wrapper">
     <!-- HEADER -->
     <section class="header container">
-        <nav class="main-navigation ">
-            <div class="main-navigation__logo"></div>
-            <div class="main-navigation__page-title">Блокноты</div>
-            <div class="main-navigation__list">
-                <ul class="nav-list">
-                    <li><a class="go_to" href="#contacts">Контакты</a></li>
-                    <li><a class="go_to" href="#calculator">Калькулятор</a></li>
-                    <li><a class="go_to" href="#delivery">Доставка и оплата</a></li>
-                </ul>
-            </div>
-
-            <div class="main-navigation__send-request">
-                <a href="#call-popup" class="c-btn is-orange-border">
-                    Отправить запрос
-                </a>
-            </div>
-
-            <div class="main-navigation__mobile">
-                <div class="icon-wrapper nav-mobile-btn">
-                <svg class="icon">
-                    <use xlink:href="#menu"/>
-                </svg>
+        <!-- main-navigation--top-fix -->
+        <nav class="main-navigation  " id="navigation">
+            <div class="main-navigation__container container">
+                <div class="main-navigation__logo"></div>
+                <div class="main-navigation__page-title">Блокноты</div>
+                <div class="main-navigation__list">
+                    <ul class="nav-list">
+                        <li><a class="go_to" href="#contacts">Контакты</a></li>
+                        <li><a class="go_to" href="#calculator">Калькулятор</a></li>
+                        <li><a class="go_to" href="#delivery">Доставка и оплата</a></li>
+                    </ul>
                 </div>
-            </div>
+                <div class="main-navigation__send-request2">
+                    <a href="#request-popup" data-title="Отправить запрос" class="c-btn js-open-call is-orange-border">
+                        Оформить заказ
+                    </a>
+                </div>
 
-            <div class="main-navigation__user-profile">
-                <ul class="header-profile">
-                    <li>
-                        <a href="#" class="c-icon is-user">
-                            <svg title="Профиль" class="icon">
-                                <use xlink:href="#user"/>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="c-icon is-basket is-non-empty">
-                            <svg title="Профиль" class="icon">
-                                <use xlink:href="#icon-cart"/>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                <div class="main-navigation__send-request">
+                    <a href="#call-popup" data-title="Отправить запрос" class="c-btn js-open-call is-orange-border">
+                        Отправить запрос
+                    </a>
+                </div>
+
+                <div class="main-navigation__mobile">
+                    <div class="icon-wrapper nav-mobile-btn">
+                    <svg class="icon">
+                        <use xlink:href="#menu"/>
+                    </svg>
+                    </div>
+                </div>
+
+                <div class="main-navigation__user-profile">
+                    <ul class="header-profile">
+                        <li>
+                            <a href="#" class="c-icon is-user">
+                                <svg title="Профиль" class="icon">
+                                    <use xlink:href="#user"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="c-icon is-basket is-non-empty">
+                                <svg title="Профиль" class="icon">
+                                    <use xlink:href="#icon-cart"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
 
@@ -109,6 +117,26 @@
                             <use xlink:href="#icon-clip"/>
                         </svg>
                         <span class="title">На скобе</span>
+
+                        <div class="hover-element">
+                            <!-- <div class="hover-element__head type-navigation__item">
+                                <svg title="На скобе" class="icon">
+                                    <use xlink:href="#icon-clip"/>
+                                </svg>
+                                <span class="title">На скобе</span>
+                            </div> -->
+                            <div class="hover-element__content">
+                                <div class="icon">
+                                    <div class="c-design"></div>
+                                </div>
+                                <div class="desc">
+                                    <div class="title">БЛОКНОТ На клею (КБС)</div>
+                                    <div class="text">
+                                        Идейные соображения высшего порядка, а также рамки и место обучения кадров требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям. Равным образом реализация намеченных плановых заданий влечет за собой процесс внедрения и модернизации.  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </a>
                 </li>
                 <li>
@@ -117,6 +145,20 @@
                             <use xlink:href="#icon-wireo"/>
                         </svg>
                         <span class="title">На пружине<br />Wire-O</span>
+                        
+                        <div class="hover-element">
+                            <div class="hover-element__content">
+                                <div class="icon">
+                                    <div class="c-design"></div>
+                                </div>
+                                <div class="desc">
+                                    <div class="title">БЛОКНОТ На клею (КБС)</div>
+                                    <div class="text">
+                                        Идейные соображения высшего порядка, а также рамки и место обучения кадров требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям. Равным образом реализация намеченных плановых заданий влечет за собой процесс внедрения и модернизации.  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </a>
                 </li>
                 <li>
@@ -128,6 +170,20 @@
                             <use xlink:href="#icon-pen-active"/>
                         </svg>
                         <span class="title">С ручкой</span>
+                        
+                        <div class="hover-element">
+                            <div class="hover-element__content">
+                                <div class="icon">
+                                    <div class="c-design"></div>
+                                </div>
+                                <div class="desc">
+                                    <div class="title">БЛОКНОТ На клею (КБС)</div>
+                                    <div class="text">
+                                        Идейные соображения высшего порядка, а также рамки и место обучения кадров требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям. Равным образом реализация намеченных плановых заданий влечет за собой процесс внедрения и модернизации.  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </a>
                 </li>
                 <li>
@@ -136,6 +192,20 @@
                             <use xlink:href="#icon-glue"/>
                         </svg>
                         <span class="title">На клею (КБС)</span>
+                        
+                        <div class="hover-element">
+                            <div class="hover-element__content">
+                                <div class="icon">
+                                    <div class="c-design"></div>
+                                </div>
+                                <div class="desc">
+                                    <div class="title">БЛОКНОТ На клею (КБС)</div>
+                                    <div class="text">
+                                        Идейные соображения высшего порядка, а также рамки и место обучения кадров требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям. Равным образом реализация намеченных плановых заданий влечет за собой процесс внедрения и модернизации.  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </a>
                 </li>
                 <li>
@@ -144,6 +214,20 @@
                             <use xlink:href="#icon-ava"/>
                         </svg>
                         <span class="title">Ava-book</span>
+                        
+                        <div class="hover-element">
+                            <div class="hover-element__content">
+                                <div class="icon">
+                                    <div class="c-design"></div>
+                                </div>
+                                <div class="desc">
+                                    <div class="title">БЛОКНОТ На клею (КБС)</div>
+                                    <div class="text">
+                                        Идейные соображения высшего порядка, а также рамки и место обучения кадров требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям. Равным образом реализация намеченных плановых заданий влечет за собой процесс внедрения и модернизации.  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </a>
                 </li>
                 <li>
@@ -155,6 +239,20 @@
                             <use xlink:href="#icon-rip-active"/>
                         </svg>
                         <span class="title">Отрывные<br />на клею</span>
+                        
+                        <div class="hover-element">
+                            <div class="hover-element__content">
+                                <div class="icon">
+                                    <div class="c-design"></div>
+                                </div>
+                                <div class="desc">
+                                    <div class="title">БЛОКНОТ На клею (КБС)</div>
+                                    <div class="text">
+                                        Идейные соображения высшего порядка, а также рамки и место обучения кадров требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям. Равным образом реализация намеченных плановых заданий влечет за собой процесс внедрения и модернизации.  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </a>
                 </li>
             </ul>
@@ -357,15 +455,21 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="calculator-orange-form">
+                    <div id="orange-form-top"></div>
+                    <div id="orange-form">
+                    <div class="calculator-orange-form" >
                         <div class="content__title">
                             <h2>Ваш заказ</h2>
                         </div>
                         <div class="row">
                             <div class="calculator-orange-form__input">
                                 <label for="num">Выберите тираж, шт.</label>
-                                <input type="text" id="num" class="" value="1000">
+                                <select type="text" id="num" class="" value="1000">
+                                    <option>100</option>
+                                    <option>200</option>
+                                    <option>300</option>
+                                    <option>400</option>
+                                    </select>
                             </div>
 
                             <div class="price-one">
@@ -467,6 +571,7 @@
                                 </li>
                             </ul>
                         </div>
+                    </div>
                     </div>
                 </div>
 
@@ -650,16 +755,16 @@
             </div>
         </div>
 
-        <div class="designs content__block">
+        <div class="designs content__block" id="design-block">
             <div class="designs__title">
                 <h2 class="title-with-line">Широкий выбор дизайна</h2>
                 <div class="designs__subtitle">Есть из чего выбрать, есть на что посмотреть!</div>
             </div>
             <div class="designs__list">
-                <div class="img"></div>
-                <div class="img"></div>
-                <div class="img"></div>
-                <div class="img"></div>
+                <div class="c-design"></div>
+                <div class="c-design"></div>
+                <div class="c-design"></div>
+                <div class="c-design"></div>
             </div>
         </div>
 
@@ -707,7 +812,7 @@
                                 <li>адрес доставки.</li>
                             </ul>
  
-                            <br><br>
+                            <br>
                             Вы оплачиваете услуги транспортной компании непосредственно по получении тиража. Вместе с грузом Вы получите полный пакет документов. Доставка до транспортной компании осуществляется нами бесплатно, никаких дополнительных плат не берется независимо от объема, стоимости и веса груза.
                         </li>
                     </ul>
@@ -723,8 +828,10 @@
 
                             <br><br>
                             <ul>
-                                <li>Адрес типографии «Август Борг» в Москве: ул. Амурская, </li>
-                                <li>д. 5, стр. 2. <a class="go_to" href="#map" class="c-link is-orange">Смотреть на карте</a></li>
+                                <li><span>Адрес типографии «Август Борг» 
+                                    в Москве: ул. Амурская, 
+                                    <br />
+                                     д. 5, стр. 2.<a class="c-link is-orange go_to" href="#map" class="c-link is-orange">Смотреть на карте</a></span></li>
                             </ul>
                             <br>
                             При самовывозе тиража из типографии необходимо предварительно согласовать время с Вашим менеджером.
@@ -811,7 +918,7 @@
 
                 <div class="btns">
                     <span>Остались вопросы?</span>
-                    <a href="#thanks-popup" class="c-btn is-orange">Задать вопрос</a>
+                    <a href="#call-popup" class="c-btn is-orange">Задать вопрос</a>
                 </div>
 
             </div>
@@ -825,7 +932,7 @@
                     <a href="#" class="c-link is-orange is-bold" >Augustborg.ru</a>
                 </span>
                 <span class="terms">
-                    <a href="#" class="c-link is-orange is-bold">
+                    <a href="#term-popup" class="c-link is-orange is-bold">
                         Условия обработки персональных данных
                     </a>
                 </span>
@@ -846,72 +953,93 @@
         <div class="c-popup__wrapper">
             <h2 class="title-with-line">Спасибо</h2>
 
-            <span class="c-link is-orange">Ваш заказ №123456 оформлен</span>
+            <div class="text">
+                <span class="c-link is-orange">Ваш заказ №123456 оформлен</span>
 
-            <p>Информация отправлена на Вашу электронную почту. При необходимости с Вами свяжется менеджер.</p>
+                <p>Информация отправлена на Вашу электронную почту. При необходимости с Вами свяжется менеджер.</p>
 
+            </div>
         </div>
     </div>
-    <div class="remodal c-popup" data-remodal-id="call-popup">
+    <div class="remodal c-popup is-thanks" data-remodal-id="thanks2-popup">
+        <button data-remodal-action="close" 
+        class="remodal-close"></button>
+
+        <div class="c-popup__wrapper">
+            <h2 class="title-with-line">Спасибо</h2>
+
+            <div class="text">
+                Информация отправлена <br/> При необходимости с Вами свяжется менеджер.
+
+            </div>
+        </div>
+    </div>
+    <div class="remodal remodal-call c-popup is-call" data-remodal-id="call-popup">
         <button data-remodal-action="close" 
         class="remodal-close"></button>
 
         <h2 class="title-with-line">Задать вопрос</h2>
 
-        <div class="c-popup__title">Ваши контактные данные</div>
-
-        <div class="garant">
-            <svg title="Профиль" class="icon">
-                <use xlink:href="#icon-lock"/>
-            </svg>
-            Гарантируем безопасность ваших данных
-        </div>
-
         <form action="">
-            <div class="form-group">
-                <label for="" class="form-label">
-                    Ваше имя
-                </label>
-                <input type="text" class="form-control" placeholder="Ваше имя">
-            </div>
-            <div class="form-group">
-                <label for="" class="form-label mask-phone">
-                    Ваш номер телефона
-                </label>
-                <input type="text" class="form-control is-success">
-                <div class="icon">
-                    <svg>
-                        <use xlink:href="#input-tick" />
+        <div class="c-popup__wrapper">
+            <div class="c-popup__column">
+                <!-- <div class="c-popup__title">Ваши контактные данные</div> -->
+
+                <div class="form-group">
+                    <label for="" class="form-label">
+                        Ваше имя
+                    </label>
+                    <input type="text" class="form-control" placeholder="Ваше имя">
+                </div>
+                <div class="form-group">
+                    <label for="" class="form-label mask-phone">
+                        Ваш номер телефона
+                    </label>
+                    <input type="text" class="form-control is-success">
+                    <div class="icon">
+                        <svg>
+                            <use xlink:href="#input-tick" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="" class="form-label">
+                        Ваш email
+                    </label>
+                    <input type="email" class="form-control is-error" placeholder="Ваша электронная почта">
+                    <div class="icon">
+                        <svg>
+                            <use xlink:href="#input-attention" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="garant">
+                    <svg title="Профиль" class="icon">
+                        <use xlink:href="#icon-lock"/>
                     </svg>
+                    Гарантируем безопасность ваших данных
+                </div>
+                <div class="form-group has-accept-terms">
+                    <div class="c-checkbox">
+                        <input type="checkbox" />
+                        <label for="">Я соглашаюсь с <a class="c-link is-orange" href="#term-popup" >условиями обработки персональных данных</a></label>
+                    </div>
                 </div>
             </div>
-            <div class="form-group">
-                <label for="" class="form-label">
-                    Ваш email
-                </label>
-                <input type="email" class="form-control is-error" placeholder="Ваша электронная почта">
-                <div class="icon">
-                    <svg>
-                        <use xlink:href="#input-attention" />
-                    </svg>
+            <div class="c-popup__column is-right not-padding">
+                <div class="form-group">
+                    <label for="" class="form-label">
+                        Текст сообщения
+                    </label>
+                    <textarea class="form-control is-textarea"></textarea>
+                </div>
+                <div class="form-group">
+                    <a href="#thanks2-popup"
+                     class="c-btn is-orange main-btn" >Отправить</a>
                 </div>
             </div>
-            <div class="form-group">
-                <label for="" class="form-label">
-                    Текст сообщения
-                </label>
-                <textarea class="form-control is-textarea"></textarea>
-            </div>
-            <div class="form-group has-accept-terms">
-                <div class="c-checkbox">
-                    <input type="checkbox" />
-                    <label for="">Я соглашаюсь с <a class="c-link is-orange" href="#" >условиями обработки персональных данных</a></label>
-                </div>
-            </div>
-            <div class="form-group">
-                <a href="#thanks-popup" class="c-btn is-orange main-btn" >Отправить</a>
-            </div>
-        </form>
+        </div>
+            </form>
         
     </div>
     
@@ -971,7 +1099,7 @@
                         <div class="form-group has-accept-terms">
                             <div class="c-checkbox">
                                 <input type="checkbox" />
-                                <label for="">Я соглашаюсь с <a class="c-link is-orange" href="#" >условиями обработки персональных данных</a></label>
+                                <label for="">Я соглашаюсь с <a class="c-link is-orange" href="#term-popup" >условиями обработки персональных данных</a></label>
                             </div>
                         </div>
                         <div class="form-group">
@@ -980,60 +1108,9 @@
                 </div>
 
                 <div class="c-popup__column is-right">
-                    <div class="c-popup__title">
-                        Загрузка макетов
-                    </div>
-
-                    <div class="form-group has-accept-terms">
-                        <div class="download-link">
-                            <span>макет_обложки.pdf</span>
-                            <img src="images/trash.png" alt="" class="icon">
-                        </div>
-                    </div>
-
-                    <div class="form-group has-accept-terms inline">
-                        <a href="#" class="c-link is-orange has-icon-download">
-                            <span>макет_обложки.pdf</span>
-                        </a>
-                        <svg class="icon">
-                            <use xlink:href="#icon-upload" />
-                        </svg>
-                    </div>
-
-                    <div class="form-group has-accept-terms inline">
-                        <a href="#" class="c-link is-orange has-icon-download">
-                            <span>макет_обложки.pdf</span>
-                        </a>
-                        <svg class="icon">
-                            <use xlink:href="#icon-upload" />
-                        </svg>
-                    </div>
-
+                    
                     <div class="form-group has-accept-terms inline">
                         <div class="c-expand is-active">
-                            <div class="c-expand__head">
-                                <div class="title has-icon attention">Технические требованиям к макетам</div>
-                                <svg class="icon">
-                                    <use xlink:href="#expand" />
-                                </svg>
-                            </div>
-
-                            <div class="c-expand__content">
-                                    <ul class="c-list-circle">
-                                        <li>в работу принимаются макеты выполненные в виде композитных PSD-файлов и/или PDF-файлов версии 1.3 и выше.</li>
-<li>размер макета в публикации должен быть равен обрезанному формату будущей продукции.</li>
-<li>все элементы, которые идут навылет, должны выступать за края страницы публикации на 3-5 мм.</li>
-<li>не допускается располагать значимые элементы публикации, например текст, ближе чем 5 мм от обрезанного формата.</li>
-<li>разрешение растровых изображений, помещенных в публикацию, должно быть не менее 250 dpi с учетом масштабирования.</li>
-<li>толщина используемых в публикации линий не должна быть меньше 0.1 pt с учетом масштабирования.</li>
-<li>все цвета, используемые в публикации, должны быть заданы в модели CMYK. В случае печати красками отличными от триады, элементы публикации, которые будут печататься смесевой краской, должны быть заданы соответствующим цветом из библиотеки Pantone.</li>
-                                    </ul>
-                                    <a href="#demand-popup" class="c-link is-orange is-bold btn-bottom">Подробнее</a>
-                            </div>  
-                        </div>
-                    </div>
-                    <div class="form-group has-accept-terms inline">
-                        <div class="c-expand">
                             <div class="c-expand__head">
                                 <div class="title has-icon settings">Характеристики заказа</div>
                                 <svg class="icon">
@@ -1124,12 +1201,68 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="form-group has-accept-terms inline">
+                        <div class="c-expand">
+                            <div class="c-expand__head">
+                                <div class="title has-icon attention">Технические требованиям к макетам</div>
+                                <svg class="icon">
+                                    <use xlink:href="#expand" />
+                                </svg>
+                            </div>
+
+                            <div class="c-expand__content">
+                                    <ul class="c-list-circle">
+                                        <li>в работу принимаются макеты выполненные в виде композитных PSD-файлов и/или PDF-файлов версии 1.3 и выше.</li>
+<li>размер макета в публикации должен быть равен обрезанному формату будущей продукции.</li>
+<li>все элементы, которые идут навылет, должны выступать за края страницы публикации на 3-5 мм.</li>
+<li>не допускается располагать значимые элементы публикации, например текст, ближе чем 5 мм от обрезанного формата.</li>
+<li>разрешение растровых изображений, помещенных в публикацию, должно быть не менее 250 dpi с учетом масштабирования.</li>
+<li>толщина используемых в публикации линий не должна быть меньше 0.1 pt с учетом масштабирования.</li>
+<li>все цвета, используемые в публикации, должны быть заданы в модели CMYK. В случае печати красками отличными от триады, элементы публикации, которые будут печататься смесевой краской, должны быть заданы соответствующим цветом из библиотеки Pantone.</li>
+                                    </ul>
+                                    <a href="#demand-popup" class="c-link is-orange is-bold btn-bottom">Подробнее</a>
+                            </div>  
+                        </div>
+                    </div>
+
+                    
+                    <div class="c-popup__title">
+                        Загрузка макетов
+                    </div>
+
+                    <div class="form-group has-accept-terms">
+                        <div class="download-link">
+                            <span>макет_обложки.pdf</span>
+                            <img src="images/trash.png" alt="" class="icon">
+                        </div>
+                    </div>
+
+                    <div class="form-group has-accept-terms inline">
+                        <a href="#" class="c-link is-orange has-icon-download">
+                            <span>макет_обложки.pdf</span>
+                        </a>
+                        <svg class="icon">
+                            <use xlink:href="#icon-upload" />
+                        </svg>
+                    </div>
+
+                    <div class="form-group has-accept-terms inline">
+                        <a href="#" class="c-link is-orange has-icon-download">
+                            <span>макет_обложки.pdf</span>
+                        </a>
+                        <svg class="icon">
+                            <use xlink:href="#icon-upload" />
+                        </svg>
+                    </div>
+
+                    
                 </div>
             </div>
         </form>
     </div>
 
-    <div class="remodal c-popup is-thanks is-demand" data-remodal-id="demand-popup">
+    <div class="remodal c-popup is-demand" data-remodal-id="demand-popup">
         <button data-remodal-action="close" 
         class="remodal-close"></button>
 
@@ -1217,6 +1350,40 @@
         </div>
     </div>
 
+    <div class="remodal c-popup is-demand is-term" data-remodal-id="term-popup">
+        <button data-remodal-action="close" 
+        class="remodal-close"></button>
+
+        <div class="c-popup__wrapper">
+            <h2 class="title-with-line">Условия обработки персональных данных</h2>
+
+            <p class="text">
+                1. Настоящим в соответствии с Федеральным законом № 152-ФЗ «О персональных данных» от 27.07.2006 года я подтверждаю свое согласие на обработку компанией Общество с ограниченной ответственностью «Август Борг» (далее «Август Борг») моих персональных данных: сбор, систематизацию, накопление, хранение, уточнение (обновление, изменение), использование, передачу исключительно в целях выполнения моих заказов, как это описано ниже, блокирование, обезличивание, уничтожение. 
+            </p>
+            <p class="text">
+                2. Компания «Август Борг» гарантирует конфиденциальность получаемой информации. Обработка персональных данных осуществляется в целях эффективного исполнения заказов, договоров и иных обязательств, принятых компанией «Август Борг» в качестве обязательных к исполнению. 
+            </p>
+            <p class="text">
+                3. Настоящее согласие распространяется на следующие мои персональные данные, которые вводят в поля данных на интернет-сайтах Компании мною или иными лицами по моему поручению: фамилия, имя и отчество, адрес электронной почты, почтовый адрес доставки заказов, контактный телефон, платёжные реквизиты и т.п. А также на мои персональные данные о текущем подключении к сайтам компании «Август Борг» в части статистических сведений (на интернет-сайтах компании «Август Борг» может проводиться сбор статистических данных о пользователе), включая: посещенные страницы; количество посещений страниц; длительность пользовательской сессии; точки входа (сторонние сайты, с которых пользователь по ссылке переходит на сайты Компании); точки выхода (ссылки на сайтах Компании, по которым пользователь переходит на сторонние сайты);  страна пользователя; регион пользователя; провайдер пользователя; браузер пользователя; системные языки пользователя; ОС пользователя; разрешение экрана пользователя; кол-во цветов экрана пользователя и т.п.. 
+
+            </p>
+            <p class="text">
+                4. Срок действия согласия до дня его отзыва в письменной форме. Я могу в любой момент отозвать настоящее согласие, направив письменное уведомления на адрес: 107497, Москва, Амурская ул. д. 5, стр. 2, с пометкой «Отзыв согласия на обработку персональных данных».
+                <br />
+                Принимаю что отзыв согласия на обработку моих персональных данных влечёт за собой удаление моей учётной записи с интернет-сайтов компании «Август Борг», а также уничтожение записей, содержащих мои персональные данные, в системах обработки персональных данных компании «Август Борг» , что может сделать невозможным пользование интернет-сервисами компании «Август Борг» . 
+ 
+            </p>
+            <p class="text">
+                5. Гарантирую, что представленная мной информация является полной, точной и достоверной, а также что при представлении информации не нарушаются действующее законодательство Российской Федерации, законные права и интересы третьих лиц. Вся представленная информация заполнена мною в отношении себя лично или иными лицами по моему поручению.  
+
+            </p>
+            <p class="text">
+                6. Настоящее согласие действует в течение всего периода хранения персональных данных, если иное не предусмотрено законодательством Российской Федерации.
+            </p>
+
+        </div>
+    </div>
+
     <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
         <symbol id="attention-circle" viewBox="0 0 64 64">
         <title>attention-circle</title> <path fill="#ffa53b" d="M32 17.446c-0.003 0-0.006 0-0.009 0-1.349 0-2.444 1.093-2.446 2.441v14.080c-0.001 0.023-0.001 0.049-0.001 0.076 0 1.356 1.099 2.456 2.456 2.456s2.456-1.099 2.456-2.456c0-0.027-0-0.054-0.001-0.080l0 0.004v-14.080c-0.003-1.349-1.097-2.442-2.446-2.442-0.002 0-0.005 0-0.008 0h0zM32 39.609c-1.357 0.007-2.454 1.108-2.456 2.465v1.47c-0.001 0.023-0.001 0.049-0.001 0.076 0 1.356 1.099 2.456 2.456 2.456s2.456-1.099 2.456-2.456c0-0.027-0-0.054-0.001-0.080l0 0.004v-1.47c0 0 0 0 0 0 0-1.357-1.097-2.458-2.453-2.465h-0.001z"/> <path fill="none" stroke="#ffa53b" stroke-width="4.7407" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M61.63 32c0 16.364-13.266 29.63-29.63 29.63s-29.63-13.266-29.63-29.63c0-16.364 13.266-29.63 29.63-29.63s29.63 13.266 29.63 29.63z"/> 
@@ -1240,7 +1407,7 @@
         <title>Icon-cards</title> <path fill="#ffa53b" d="M10.24 46.080v-2.56h-5.12c-1.414 0-2.56-1.146-2.56-2.56v-35.84c0-1.414 1.146-2.56 2.56-2.56h58.88c1.414 0 2.56 1.146 2.56 2.56v10.24h2.56v-10.24c0-2.828-2.292-5.12-5.12-5.12h-58.88c-2.828 0-5.12 2.292-5.12 5.12v35.84c0 2.828 2.292 5.12 5.12 5.12h5.12zM76.8 64h-58.88c-2.828 0-5.12-2.292-5.12-5.12v0-35.84c0-2.828 2.292-5.12 5.12-5.12v0h58.88c2.828 0 5.12 2.292 5.12 5.12v0 35.84c0 2.828-2.292 5.12-5.12 5.12v0zM17.92 20.48c-1.414 0-2.56 1.146-2.56 2.56v0 35.84c0 1.414 1.146 2.56 2.56 2.56v0h58.88c1.414 0 2.56-1.146 2.56-2.56v0-35.84c0-1.414-1.146-2.56-2.56-2.56v0h-58.88zM40.96 51.2h-0.002c0.012 0 0.024 0 0.036 0 2.852 0 5.43-1.176 7.277-3.072l-1.828-1.792-0.001 0.001c-1.394 1.421-3.336 2.303-5.483 2.303-4.242 0-7.68-3.438-7.68-7.68s3.438-7.68 7.68-7.68c2.148 0 4.090 0.882 5.485 2.304l1.828-1.792-0.002-0.002c-1.858-1.895-4.447-3.070-7.311-3.070-5.655 0-10.24 4.585-10.24 10.24s4.585 10.24 10.24 10.24c0.001 0 0.001 0 0.001 0zM53.76 51.2c-5.655 0-10.24-4.585-10.24-10.24s4.585-10.24 10.24-10.24c5.655 0 10.24 4.585 10.24 10.24v0c-0.007 5.652-4.588 10.233-10.239 10.24h-0.001zM53.76 33.28c-4.242 0-7.68 3.438-7.68 7.68s3.438 7.68 7.68 7.68c4.242 0 7.68-3.438 7.68-7.68v0c-0.004-4.24-3.44-7.676-7.68-7.68h-0zM66.56 7.68h-64v-2.56h64v2.56zM10.24 20.48h-7.68v-2.56h7.68v2.56zM10.24 30.72h-5.12v-2.56h5.12v2.56zM25.6 42.24h-2.56v-2.56h2.56v2.56zM71.68 42.24h-2.56v-2.56h2.56v2.56zM61.44 12.8h-12.8v-2.56h12.8v2.56zM46.080 12.8h-5.12v-2.56h5.12v2.56z"/> 
         </symbol>
         <symbol id="icon-cart" viewBox="0 0 72 64">
-        <title>icon-cart</title> <path fill="#ffa53b" d="M14.871 6.735h-0.151c0.188 0.161 0.34 0.358 0.447 0.58l0.005 0.011zM62.569 46.012c-4.559 0.018-8.312 3.445-8.843 7.863l-0.004 0.043h-20.254c-0.375-2.89-2.063-5.321-4.437-6.704l-0.043-0.023 1.92-4.518h33.845c2.598-0.429 4.555-2.658 4.555-5.345 0-0.016-0-0.032-0-0.048v0.002-26.052c1.147-0.118 2.033-1.079 2.033-2.248s-0.887-2.129-2.024-2.247l-0.010-0.001h-54.438l0.301 0.591c-0.112-0.233-0.264-0.43-0.449-0.589l-0.002-0.002h0.151l-2.108-4.314c-0.759-1.505-2.293-2.52-4.064-2.52-0.334 0-0.66 0.036-0.973 0.105l0.030-0.005h-5.534c-1.13 0.135-1.998 1.088-1.998 2.244s0.868 2.109 1.988 2.243l0.011 0.001h5.647c0.301 0 0.678 0 0.941 0l2.296 4.71 0.038 0.105c0.026 0.040 0.051 0.075 0.077 0.108l-0.002-0.002c-0.001 0.004-0.001 0.009-0.001 0.014 0 0.036 0.015 0.068 0.038 0.091v0l0.264 0.655 12.311 28.857c0.553 1.205 1.419 2.186 2.495 2.864l0.027 0.016-1.732 4.096h-0.038c-0.014-0-0.030-0-0.046-0-4.967 0-8.994 4.027-8.994 8.994s4.027 8.994 8.994 8.994c3.743 0 6.952-2.286 8.306-5.538l0.022-0.059h21.421c1.378 3.287 4.569 5.553 8.29 5.553 4.951 0 8.964-4.013 8.964-8.964s-4.013-8.964-8.964-8.964c-0.002 0-0.005 0-0.008 0h0zM16.828 11.23h48v26.041c-0.095 0.354-0.25 0.664-0.456 0.932l0.005-0.006h-35.501c-0.407-0.205-0.731-0.523-0.936-0.914l-0.006-0.012zM24.584 59.501c-0.005 0-0.010 0-0.015 0-2.483 0-4.495-2.013-4.495-4.495s2.012-4.495 4.495-4.495c2.483 0 4.495 2.013 4.495 4.495v0c0 0.005 0 0.010 0 0.015 0 2.475-2.005 4.482-4.48 4.484h-0zM62.569 59.501c-0.005 0-0.010 0-0.015 0-2.483 0-4.495-2.013-4.495-4.495s2.013-4.495 4.495-4.495c2.483 0 4.495 2.013 4.495 4.495v0c0 0.007 0 0.015 0 0.023 0 2.472-2.004 4.476-4.476 4.476-0.001 0-0.003 0-0.004 0h0zM11.219 9.431c-0.024-0.030-0.049-0.065-0.072-0.101l-0.003-0.005 0.113 0.215c-0.026-0.024-0.042-0.057-0.042-0.095 0-0.012 0.002-0.023 0.005-0.034l-0 0.001zM11.257 9.536c0.052 0.248 0.143 0.467 0.268 0.663l-0.005-0.008zM14.871 6.746h-0.151c0.188 0.161 0.34 0.358 0.447 0.58l0.005 0.011zM58.127 13.485c-1.248 0-2.259 1.011-2.259 2.259v17.969c0 1.248 1.011 2.259 2.259 2.259v0c1.227-0.002 2.221-0.997 2.221-2.225 0-0.012-0-0.024-0-0.036v0.002-17.991c0-0.006 0-0.012 0-0.019 0-1.227-0.994-2.223-2.221-2.225h-0zM49.167 13.485c-1.227 0.002-2.221 0.997-2.221 2.225 0 0.012 0 0.024 0 0.036v-0.002 17.969c-0 0.010-0 0.022-0 0.034 0 1.228 0.994 2.223 2.221 2.225h0c1.248 0 2.259-1.011 2.259-2.259v0-17.991c-0.009-1.241-1.017-2.244-2.259-2.244 0 0-0 0-0 0v0zM40.245 13.485c-1.248 0-2.259 1.011-2.259 2.259v17.969c0 1.248 1.011 2.259 2.259 2.259v0c1.227-0.002 2.221-0.997 2.221-2.225 0-0.012-0-0.024-0-0.036v0.002-17.991c0-0.006 0-0.012 0-0.019 0-1.227-0.994-2.223-2.221-2.225h-0zM31.285 13.485c-1.227 0.002-2.221 0.997-2.221 2.225 0 0.012 0 0.024 0 0.036v-0.002 17.969c-0 0.010-0 0.022-0 0.034 0 1.228 0.994 2.223 2.221 2.225h0c1.247 0 2.259-1.011 2.259-2.259v0-17.991c-0.009-1.241-1.017-2.244-2.259-2.244 0 0-0 0-0 0v0z"/> 
+        <title>icon-cart</title> <path d="M14.871 6.735h-0.151c0.188 0.161 0.34 0.358 0.447 0.58l0.005 0.011zM62.569 46.012c-4.559 0.018-8.312 3.445-8.843 7.863l-0.004 0.043h-20.254c-0.375-2.89-2.063-5.321-4.437-6.704l-0.043-0.023 1.92-4.518h33.845c2.598-0.429 4.555-2.658 4.555-5.345 0-0.016-0-0.032-0-0.048v0.002-26.052c1.147-0.118 2.033-1.079 2.033-2.248s-0.887-2.129-2.024-2.247l-0.010-0.001h-54.438l0.301 0.591c-0.112-0.233-0.264-0.43-0.449-0.589l-0.002-0.002h0.151l-2.108-4.314c-0.759-1.505-2.293-2.52-4.064-2.52-0.334 0-0.66 0.036-0.973 0.105l0.030-0.005h-5.534c-1.13 0.135-1.998 1.088-1.998 2.244s0.868 2.109 1.988 2.243l0.011 0.001h5.647c0.301 0 0.678 0 0.941 0l2.296 4.71 0.038 0.105c0.026 0.040 0.051 0.075 0.077 0.108l-0.002-0.002c-0.001 0.004-0.001 0.009-0.001 0.014 0 0.036 0.015 0.068 0.038 0.091v0l0.264 0.655 12.311 28.857c0.553 1.205 1.419 2.186 2.495 2.864l0.027 0.016-1.732 4.096h-0.038c-0.014-0-0.030-0-0.046-0-4.967 0-8.994 4.027-8.994 8.994s4.027 8.994 8.994 8.994c3.743 0 6.952-2.286 8.306-5.538l0.022-0.059h21.421c1.378 3.287 4.569 5.553 8.29 5.553 4.951 0 8.964-4.013 8.964-8.964s-4.013-8.964-8.964-8.964c-0.002 0-0.005 0-0.008 0h0zM16.828 11.23h48v26.041c-0.095 0.354-0.25 0.664-0.456 0.932l0.005-0.006h-35.501c-0.407-0.205-0.731-0.523-0.936-0.914l-0.006-0.012zM24.584 59.501c-0.005 0-0.010 0-0.015 0-2.483 0-4.495-2.013-4.495-4.495s2.012-4.495 4.495-4.495c2.483 0 4.495 2.013 4.495 4.495v0c0 0.005 0 0.010 0 0.015 0 2.475-2.005 4.482-4.48 4.484h-0zM62.569 59.501c-0.005 0-0.010 0-0.015 0-2.483 0-4.495-2.013-4.495-4.495s2.013-4.495 4.495-4.495c2.483 0 4.495 2.013 4.495 4.495v0c0 0.007 0 0.015 0 0.023 0 2.472-2.004 4.476-4.476 4.476-0.001 0-0.003 0-0.004 0h0zM11.219 9.431c-0.024-0.030-0.049-0.065-0.072-0.101l-0.003-0.005 0.113 0.215c-0.026-0.024-0.042-0.057-0.042-0.095 0-0.012 0.002-0.023 0.005-0.034l-0 0.001zM11.257 9.536c0.052 0.248 0.143 0.467 0.268 0.663l-0.005-0.008zM14.871 6.746h-0.151c0.188 0.161 0.34 0.358 0.447 0.58l0.005 0.011zM58.127 13.485c-1.248 0-2.259 1.011-2.259 2.259v17.969c0 1.248 1.011 2.259 2.259 2.259v0c1.227-0.002 2.221-0.997 2.221-2.225 0-0.012-0-0.024-0-0.036v0.002-17.991c0-0.006 0-0.012 0-0.019 0-1.227-0.994-2.223-2.221-2.225h-0zM49.167 13.485c-1.227 0.002-2.221 0.997-2.221 2.225 0 0.012 0 0.024 0 0.036v-0.002 17.969c-0 0.010-0 0.022-0 0.034 0 1.228 0.994 2.223 2.221 2.225h0c1.248 0 2.259-1.011 2.259-2.259v0-17.991c-0.009-1.241-1.017-2.244-2.259-2.244 0 0-0 0-0 0v0zM40.245 13.485c-1.248 0-2.259 1.011-2.259 2.259v17.969c0 1.248 1.011 2.259 2.259 2.259v0c1.227-0.002 2.221-0.997 2.221-2.225 0-0.012-0-0.024-0-0.036v0.002-17.991c0-0.006 0-0.012 0-0.019 0-1.227-0.994-2.223-2.221-2.225h-0zM31.285 13.485c-1.227 0.002-2.221 0.997-2.221 2.225 0 0.012 0 0.024 0 0.036v-0.002 17.969c-0 0.010-0 0.022-0 0.034 0 1.228 0.994 2.223 2.221 2.225h0c1.247 0 2.259-1.011 2.259-2.259v0-17.991c-0.009-1.241-1.017-2.244-2.259-2.244 0 0-0 0-0 0v0z"/> 
         </symbol>
         <symbol id="icon-cashbox" viewBox="0 0 68 64">
         <title>Icon-cashbox</title> <path fill="#ffa53b" d="M67.114 64h-66.027c-0.589 0-1.067-0.478-1.067-1.067v0-9.6h2.133v8.533h63.9v-8.533h2.133v9.6c0 0 0 0 0 0 0 0.589-0.478 1.067-1.067 1.067-0.002 0-0.004 0-0.007 0h0zM68.106 49.749l-7.381-19.008v-16.875c0-0.589-0.478-1.067-1.067-1.067v0h-7.456v-2.133h5.323c0.589 0 1.067-0.478 1.067-1.067v0-8.533c0-0.589-0.478-1.067-1.067-1.067v0h-19.168c-0.589 0-1.067 0.478-1.067 1.067v0 8.533c0 0.589 0.478 1.067 1.067 1.067v0h5.323v2.133h-10.645v2.133h25.557v14.933h-48.992v-14.933h2.133v7.467c0 0.589 0.478 1.067 1.067 1.067v0h17.035c0.589 0 1.067-0.478 1.067-1.067v0-17.067c0-0.003 0-0.007 0-0.011 0-0.292-0.118-0.556-0.309-0.747l-2.133-2.133c-0.193-0.192-0.459-0.31-0.752-0.31s-0.559 0.119-0.752 0.31l0-0-1.376 1.387-1.376-1.387c-0.193-0.192-0.459-0.31-0.752-0.31s-0.559 0.119-0.752 0.31l0-0-1.376 1.387-1.376-1.387c-0.196-0.19-0.463-0.307-0.757-0.309h-0c-0.294 0.004-0.56 0.121-0.758 0.31l0-0-1.376 1.387-1.376-1.387c-0.196-0.183-0.461-0.296-0.752-0.296s-0.556 0.113-0.753 0.297l0.001-0.001-2.133 2.133c-0.19 0.196-0.307 0.463-0.309 0.757v7.467h-3.189c-0.589 0-1.067 0.478-1.067 1.067v0 16.875l-7.381 19.008c-0.045 0.114-0.071 0.246-0.071 0.384 0 0.588 0.476 1.065 1.063 1.067h66.027c0.587-0.007 1.061-0.485 1.061-1.073 0-0.136-0.025-0.266-0.071-0.385l0.002 0.007zM39.423 8.533v-6.4h17.045v6.4h-17.045zM50.079 12.8h-4.267v-2.133h4.267v2.133zM13.866 5.771l1.067-1.067 1.376 1.387c0.193 0.192 0.459 0.31 0.752 0.31s0.559-0.119 0.752-0.31l-0 0 1.376-1.387 1.376 1.387c0.196 0.19 0.463 0.307 0.757 0.309h0c0.291-0.002 0.555-0.12 0.747-0.309l-0 0 1.376-1.387 1.387 1.387c0.193 0.192 0.459 0.31 0.752 0.31s0.559-0.119 0.752-0.31l-0 0 1.376-1.387 1.067 1.067v15.563h-14.912v-15.563zM2.644 49.067l6.624-17.067h49.664l6.624 17.067h-62.912zM55.398 27.733h-21.298c-0.589 0-1.067-0.478-1.067-1.067v0-8.533c0-0.589 0.478-1.067 1.067-1.067v0h21.299c0.589 0 1.067 0.478 1.067 1.067v0 8.533c0 0.589-0.478 1.067-1.067 1.067-0 0-0.001 0-0.001 0h0zM35.167 25.6h19.17v-6.4h-19.17v6.4zM26.647 14.933h-10.651v-2.133h10.651v2.133zM26.647 19.2h-10.651v-2.133h10.651v2.133zM47.947 37.333h-2.133v-2.133h2.133v2.133zM45.813 41.6h-2.133v-2.133h2.133v2.133zM50.074 41.6h-2.133v-2.133h2.133v2.133zM47.94 45.867h-2.133v-2.133h2.133v2.133zM52.201 45.867h-2.133v-2.133h2.133v2.133zM43.681 37.333h-2.133v-2.133h2.133v2.133zM54.331 41.6h-2.133v-2.133h2.133v2.133zM56.464 45.867h-2.133v-2.133h2.133v2.133zM52.204 37.333h-2.133v-2.133h2.133v2.133zM41.554 41.6h-2.133v-2.133h2.133v2.133zM43.687 45.867h-2.133v-2.133h2.133v2.133zM39.427 37.333h-2.133v-2.133h2.133v2.133zM37.294 41.6h-2.133v-2.133h2.133v2.133zM35.161 37.333h-2.133v-2.133h2.133v2.133zM33.027 41.6h-2.133v-2.133h2.133v2.133zM30.894 37.333h-2.133v-2.133h2.133v2.133zM28.761 41.6h-2.133v-2.133h2.133v2.133zM26.627 37.333h-2.133v-2.133h2.133v2.133zM24.494 41.6h-2.133v-2.133h2.133v2.133zM26.627 45.867h-2.133v-2.133h2.133v2.133zM22.367 37.333h-2.133v-2.133h2.133v2.133zM22.367 45.867h-2.133v-2.133h2.133v2.133zM20.234 41.6h-2.133v-2.133h2.133v2.133zM18.1 45.867h-2.133v-2.133h2.133v2.133zM18.1 37.333h-2.133v-2.133h2.133v2.133zM15.967 41.6h-2.133v-2.133h2.133v2.133zM13.834 45.867h-2.133v-2.133h2.133v2.133zM39.394 45.867h-2.133v-2.133h2.133v2.133zM35.167 45.867h-2.133v-2.133h2.133v2.133zM30.9 45.867h-2.133v-2.133h2.133v2.133zM30.9 27.733h-19.167v-2.133h19.167v2.133zM18.121 10.667h-2.133v-2.133h2.133v2.133zM22.381 10.667h-2.133v-2.133h2.133v2.133zM26.641 10.667h-2.133v-2.133h2.133v2.133zM39.421 23.467h-2.133v-2.133h2.133v2.133zM43.681 23.467h-2.133v-2.133h2.133v2.133zM47.94 23.467h-2.133v-2.133h2.133v2.133zM52.201 23.467h-2.133v-2.133h2.133v2.133zM54.334 6.4h-12.78v-2.133h12.78v2.133zM34.1 58.667c-1.178 0-2.133-0.955-2.133-2.133s0.955-2.133 2.133-2.133c1.178 0 2.133 0.955 2.133 2.133v0c0 1.178-0.955 2.133-2.133 2.133v0zM27.71 57.6h-21.301v-2.133h21.3v2.133zM61.79 57.6h-21.301v-2.133h21.3v2.133z"/> 
@@ -1306,10 +1473,20 @@
         <title>star-sm</title> <path fill="#fbc91c" d="M66.32 24.32c-0.14-0.426-0.507-0.739-0.954-0.799l-0.006-0.001-21.488-3.2-9.6-19.712c-0.206-0.366-0.592-0.609-1.035-0.609-0.013 0-0.026 0-0.039 0.001l0.002-0c-0.003 0-0.007-0-0.010-0-0.462 0-0.861 0.268-1.051 0.657l-0.003 0.007-9.6 19.712-21.488 3.2c-0.452 0.063-0.818 0.375-0.958 0.792l-0.002 0.008c-0.036 0.11-0.057 0.236-0.057 0.367 0 0.338 0.138 0.644 0.361 0.864l15.544 15.344-3.672 21.664c-0.010 0.058-0.015 0.126-0.015 0.194 0 0.399 0.19 0.754 0.484 0.979l0.003 0.002c0.193 0.143 0.435 0.229 0.697 0.229 0.205 0 0.397-0.052 0.565-0.144l-0.006 0.003 19.2-10.232 19.2 10.232c0.158 0.086 0.346 0.136 0.545 0.136 0.005 0 0.010-0 0.016-0h-0.001c0.001 0 0.002 0 0.003 0 0.26 0 0.501-0.084 0.696-0.226l-0.003 0.002c0.298-0.224 0.489-0.577 0.489-0.975 0-0.071-0.006-0.141-0.018-0.209l0.001 0.007-3.672-21.664 15.552-15.344c0.238-0.224 0.386-0.541 0.386-0.892 0-0.142-0.024-0.278-0.068-0.405l0.003 0.009z"/> 
         </symbol>
         <symbol id="star" viewBox="0 0 69 64">
-        <title>star</title> <path fill="#fbc91c" d="M69.093 24.323c-0.162-0.426-0.532-0.738-0.984-0.814l-22.414-3.167-10.020-19.709c-0.188-0.4-0.587-0.673-1.050-0.673-0.018 0-0.036 0-0.053 0.001l0.002-0c-0.475 0.008-0.886 0.275-1.098 0.665l-0.003 0.007-10.020 19.715-22.352 3.16c-0.617 0.041-1.102 0.552-1.102 1.176 0 0.345 0.149 0.656 0.385 0.871l0.001 0.001 16.186 15.344-3.799 21.669c-0.016 0.071-0.026 0.153-0.026 0.237 0 0.393 0.206 0.739 0.517 0.933l0.005 0.003c0.205 0.147 0.461 0.235 0.738 0.235 0.213 0 0.414-0.052 0.591-0.144l-0.007 0.003 19.985-10.229 20.040 10.229c0.16 0.083 0.349 0.133 0.549 0.138h0.001c0.005 0 0.010 0 0.015 0 0.282 0 0.544-0.086 0.76-0.234l-0.005 0.003c0.31-0.226 0.508-0.587 0.508-0.995 0-0.063-0.005-0.124-0.014-0.184l0.001 0.007-3.854-21.669 16.186-15.343c0.239-0.214 0.389-0.523 0.389-0.868 0-0.131-0.022-0.256-0.061-0.374l0.002 0.008z"/> 
+        <title>star</title> <path d="M69.093 24.323c-0.162-0.426-0.532-0.738-0.984-0.814l-22.414-3.167-10.020-19.709c-0.188-0.4-0.587-0.673-1.050-0.673-0.018 0-0.036 0-0.053 0.001l0.002-0c-0.475 0.008-0.886 0.275-1.098 0.665l-0.003 0.007-10.020 19.715-22.352 3.16c-0.617 0.041-1.102 0.552-1.102 1.176 0 0.345 0.149 0.656 0.385 0.871l0.001 0.001 16.186 15.344-3.799 21.669c-0.016 0.071-0.026 0.153-0.026 0.237 0 0.393 0.206 0.739 0.517 0.933l0.005 0.003c0.205 0.147 0.461 0.235 0.738 0.235 0.213 0 0.414-0.052 0.591-0.144l-0.007 0.003 19.985-10.229 20.040 10.229c0.16 0.083 0.349 0.133 0.549 0.138h0.001c0.005 0 0.010 0 0.015 0 0.282 0 0.544-0.086 0.76-0.234l-0.005 0.003c0.31-0.226 0.508-0.587 0.508-0.995 0-0.063-0.005-0.124-0.014-0.184l0.001 0.007-3.854-21.669 16.186-15.343c0.239-0.214 0.389-0.523 0.389-0.868 0-0.131-0.022-0.256-0.061-0.374l0.002 0.008z"/> 
         </symbol>
         <symbol id="user" viewBox="0 0 61 64">
-        <title>User</title> <path fill="none" stroke="#ffa53b" stroke-width="5.0526" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="miter" d="M36.85 34.169c2.783 1.908 6.010 3.442 9.467 4.43l0.234 0.057c3.788 0.934 6.553 4.302 6.553 8.315 0 0.33-0.019 0.656-0.055 0.977l0.004-0.039c0.007 0.233 0.011 0.508 0.011 0.783 0 1.706-0.151 3.377-0.44 5l0.025-0.171c-0.211 0.829-0.765 1.5-1.499 1.862l-0.017 0.007c-6.417 3.309-14.005 5.249-22.046 5.249-0.421 0-0.84-0.005-1.258-0.016l0.062 0.001"/> <path fill="none" stroke="#ffa53b" stroke-width="5.0526" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="miter" d="M18.728 34.169c-2.783 1.908-6.010 3.442-9.467 4.43l-0.234 0.057c-3.788 0.934-6.553 4.302-6.553 8.315 0 0.33 0.019 0.656 0.055 0.977l-0.004-0.039c-0.007 0.233-0.011 0.508-0.011 0.783 0 1.706 0.151 3.377 0.44 5l-0.025-0.171c0.211 0.829 0.765 1.5 1.499 1.862l0.017 0.007c6.417 3.309 14.005 5.249 22.046 5.249 0.421 0 0.84-0.005 1.258-0.016l-0.062 0.001"/> <path fill="none" stroke="#ffa53b" stroke-width="5.0526" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M27.79 3.368c5.845 0.625 10.483 5.085 11.376 10.787l0.009 0.072c0.048 0.665 0.076 1.44 0.076 2.221s-0.028 1.557-0.082 2.325l0.006-0.103v4.443c-0.304 6.052-5.285 10.845-11.385 10.845s-11.082-4.792-11.384-10.818l-0.001-0.027v-4.443c0-1.563-0.034-2.957 0-4.443 0.921-5.765 5.55-10.215 11.327-10.855l0.058-0.005z"/> 
+        <title>User</title> <path fill="none" stroke-width="5.0526" 
+        stroke-miterlimit="4" 
+        stroke-linecap="round"
+         stroke-linejoin="miter" 
+         d="M36.85 34.169c2.783 1.908 6.010 3.442 9.467 4.43l0.234 0.057c3.788 0.934 6.553 4.302 6.553 8.315 0 0.33-0.019 0.656-0.055 0.977l0.004-0.039c0.007 0.233 0.011 0.508 0.011 0.783 0 1.706-0.151 3.377-0.44 5l0.025-0.171c-0.211 0.829-0.765 1.5-1.499 1.862l-0.017 0.007c-6.417 3.309-14.005 5.249-22.046 5.249-0.421 0-0.84-0.005-1.258-0.016l0.062 0.001"/> 
+         <path fill="none"
+          stroke-width="5.0526" 
+          stroke-miterlimit="4" 
+          stroke-linecap="round" 
+          stroke-linejoin="miter" 
+          d="M18.728 34.169c-2.783 1.908-6.010 3.442-9.467 4.43l-0.234 0.057c-3.788 0.934-6.553 4.302-6.553 8.315 0 0.33 0.019 0.656 0.055 0.977l-0.004-0.039c-0.007 0.233-0.011 0.508-0.011 0.783 0 1.706 0.151 3.377 0.44 5l-0.025-0.171c0.211 0.829 0.765 1.5 1.499 1.862l0.017 0.007c6.417 3.309 14.005 5.249 22.046 5.249 0.421 0 0.84-0.005 1.258-0.016l-0.062 0.001"/> <path fill="none" stroke-width="5.0526" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M27.79 3.368c5.845 0.625 10.483 5.085 11.376 10.787l0.009 0.072c0.048 0.665 0.076 1.44 0.076 2.221s-0.028 1.557-0.082 2.325l0.006-0.103v4.443c-0.304 6.052-5.285 10.845-11.385 10.845s-11.082-4.792-11.384-10.818l-0.001-0.027v-4.443c0-1.563-0.034-2.957 0-4.443 0.921-5.765 5.55-10.215 11.327-10.855l0.058-0.005z"/> 
         </symbol>
     </svg>
 
