@@ -322,8 +322,11 @@ body {
       .main-navigation--top-fix > .main-navigation__container > .main-navigation__user-profile .icon {
         fill: #fff;
         stroke: #fff; }
+      .main-navigation--top-fix > .main-navigation__container > .main-navigation__send-request2 {
+        display: block; }
       .main-navigation--top-fix > .main-navigation__container > .main-navigation__send-request2 .is-orange-border {
         color: #ffa53b;
+        display: block;
         background: #fff;
         border-color: #fff; }
         .main-navigation--top-fix > .main-navigation__container > .main-navigation__send-request2 .is-orange-border:hover {
@@ -548,6 +551,9 @@ body {
       background-color: white;
       min-width: 100%;
       box-shadow: -4.5px 5.362px 19px 0px rgba(0, 0, 0, 0.1); }
+      .type-navigation__item .hover-element.fix-in-right {
+        left: auto;
+        right: 0; }
       .type-navigation__item .hover-element__head {
         position: absolute;
         top: -90px;
@@ -1437,31 +1443,49 @@ body {
         background-image: url(../images/svg/Icon-print.svg); }
   .calculator-orange-form__input {
     position: relative; }
-    .calculator-orange-form__input > input, .calculator-orange-form__input select {
+    .calculator-orange-form__input > .expand-select {
+      display: flex;
+      flex-direction: column;
       box-shadow: none;
       border: none;
       background: none;
-      height: 54px;
+      height: 50px;
       border-radius: 6px;
       background-color: rgba(0, 0, 0, 0.102);
-      padding: 18px 18px 18px 170px;
       width: 240px;
       font-size: 16px;
       font-weight: bold;
-      color: #fff; }
-      .calculator-orange-form__input > input > option, .calculator-orange-form__input select > option {
-        box-shadow: none;
-        border: none;
-        background: none;
-        height: 50px;
-        border-radius: 6px;
-        background-color: rgba(0, 0, 0, 0.102);
-        padding: 18px 18px 18px 170px;
-        width: 240px;
-        font-size: 16px;
-        font-weight: bold;
-        color: #fff; }
-      .calculator-orange-form__input > input:focus, .calculator-orange-form__input select:focus {
+      color: #fff;
+      position: relative;
+      cursor: pointer;
+      z-index: 999; }
+      .calculator-orange-form__input > .expand-select.is-active > .list {
+        display: flex; }
+      .calculator-orange-form__input > .expand-select > .title {
+        padding: 18px 18px 18px 170px; }
+      .calculator-orange-form__input > .expand-select > .list {
+        display: none;
+        margin-top: 10px;
+        height: 180px;
+        overflow-y: auto;
+        position: absolute;
+        flex-direction: column;
+        top: 50px;
+        z-index: 99999; }
+        .calculator-orange-form__input > .expand-select > .list > li {
+          box-shadow: none;
+          border: none;
+          margin: 2px 0;
+          background: none;
+          height: 50px;
+          border-radius: 6px;
+          background-color: rgba(0, 0, 0, 0.3);
+          padding: 18px 18px 18px 170px;
+          width: 100%;
+          font-size: 16px;
+          font-weight: bold;
+          color: #fff; }
+      .calculator-orange-form__input > .expand-select:focus {
         outline: none;
         background-color: rgba(0, 0, 0, 0.15); }
     .calculator-orange-form__input > label {
@@ -1477,7 +1501,7 @@ body {
       z-index: 111;
       font-size: 10px;
       font-weight: bold;
-      color: rgba(255, 255, 255, 0.8); }
+      color: white; }
 
 .calculator-additional {
   padding: 25px 30px 30px;
@@ -1552,6 +1576,8 @@ body {
   font-size: 34px;
   margin-bottom: 13px;
   position: relative; }
+  .title-with-line.is-small {
+    font-size: 26px; }
   .title-with-line:before {
     content: '';
     display: block;
@@ -1621,7 +1647,7 @@ body {
       font-size: 16px;
       line-height: 1.5; }
   .delivery__title > h4 {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     text-transform: uppercase; }
   .delivery__columns {

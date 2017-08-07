@@ -215,7 +215,7 @@
                         </svg>
                         <span class="title">Ava-book</span>
                         
-                        <div class="hover-element">
+                        <div class="hover-element fix-in-right">
                             <div class="hover-element__content">
                                 <div class="icon">
                                     <div class="c-design"></div>
@@ -240,7 +240,7 @@
                         </svg>
                         <span class="title">Отрывные<br />на клею</span>
                         
-                        <div class="hover-element">
+                        <div class="hover-element fix-in-right">
                             <div class="hover-element__content">
                                 <div class="icon">
                                     <div class="c-design"></div>
@@ -464,12 +464,21 @@
                         <div class="row">
                             <div class="calculator-orange-form__input">
                                 <label for="num">Выберите тираж, шт.</label>
-                                <select type="text" id="num" class="" value="1000">
+                                <div class="expand-select">
+                                    <div class="title">1000</div>
+                                    <ul class="list">
+                                        <li data-val='100'>100</li>
+                                        <li data-val='1000'>1000</li>
+                                        <li data-val='2000'>2000</li>
+                                        <li data-val='3000'>3000</li>
+                                    </ul>
+                                </div>
+                                <!-- <select type="text" id="num" class="" value="1000">
                                     <option>100</option>
                                     <option>200</option>
                                     <option>300</option>
                                     <option>400</option>
-                                    </select>
+                                    </select> -->
                             </div>
 
                             <div class="price-one">
@@ -1022,7 +1031,7 @@
                 <div class="form-group has-accept-terms">
                     <div class="c-checkbox">
                         <input type="checkbox" />
-                        <label for="">Я соглашаюсь с <a class="c-link is-orange" href="#term-popup" >условиями обработки персональных данных</a></label>
+                        <label for="">Я соглашаюсь с <a class="c-link is-orange" href="#term-popup" target="_blank" >условиями обработки персональных данных</a></label>
                     </div>
                 </div>
             </div>
@@ -1099,7 +1108,7 @@
                         <div class="form-group has-accept-terms">
                             <div class="c-checkbox">
                                 <input type="checkbox" />
-                                <label for="">Я соглашаюсь с <a class="c-link is-orange" href="#term-popup" >условиями обработки персональных данных</a></label>
+                                <label for="">Я соглашаюсь с <a class="c-link is-orange" href="#term-popup" target="_blank">условиями обработки персональных данных</a></label>
                             </div>
                         </div>
                         <div class="form-group">
@@ -1347,7 +1356,7 @@
         class="remodal-close"></button>
 
         <div class="c-popup__wrapper">
-            <h2 class="title-with-line">Условия обработки персональных данных</h2>
+            <h2 class="title-with-line is-small">Условия обработки персональных данных</h2>
 
             <p class="text">
                 1. Настоящим в соответствии с Федеральным законом № 152-ФЗ «О персональных данных» от 27.07.2006 года я подтверждаю свое согласие на обработку компанией Общество с ограниченной ответственностью «Август Борг» (далее «Август Борг») моих персональных данных: сбор, систематизацию, накопление, хранение, уточнение (обновление, изменение), использование, передачу исключительно в целях выполнения моих заказов, как это описано ниже, блокирование, обезличивание, уничтожение. 
