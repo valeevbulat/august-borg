@@ -322,7 +322,6 @@ body {
         stroke: #fff; }
       .main-navigation--top-fix > .main-navigation__container > .main-navigation__send-request2 .is-orange-border {
         color: #ffa53b;
-        display: none;
         background: #fff;
         border-color: #fff; }
         .main-navigation--top-fix > .main-navigation__container > .main-navigation__send-request2 .is-orange-border:hover {
@@ -381,8 +380,7 @@ body {
       .main-navigation__send-request {
         display: block; } }
   .main-navigation__send-request2 {
-    margin-left: 45px;
-    display: none; }
+    margin-left: 45px; }
     .main-navigation__send-request2.is-mobile {
       display: block;
       margin-left: 0; }
@@ -814,7 +812,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 30px;
     height: 100%;
     opacity: 0;
     z-index: 111; }
@@ -965,7 +963,8 @@ body {
         width: 13px; }
         .slider-add__best-price-wrapper .rating > .star > .icon {
           width: 13px;
-          height: 13px; }
+          height: 13px;
+          fill: #ffa53b; }
     .slider-add__best-price-wrapper .btn > .c-btn, .slider-add__best-price-wrapper .btn > .c-btn-param {
       padding: 0 45px;
       margin: 20px 0 0; }
@@ -1328,7 +1327,8 @@ body {
             margin: 0 1px; }
             .calculator__graph .table > .column.is-best-price .best-price > .rating > .star > .icon {
               width: 9px;
-              height: 9px; }
+              height: 9px;
+              fill: #ffa53b; }
 
 .calculator-orange-form {
   position: relative;
